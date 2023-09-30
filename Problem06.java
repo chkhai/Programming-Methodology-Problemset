@@ -9,6 +9,12 @@ public class Problem06 extends Karel {
 	
 	
 	public void run(){
+		while(noBeepersPresent()){
+			move();
+		}
+		while(beepersPresent()){
+			pickBeeper();
+		}
 		
 	}
 
