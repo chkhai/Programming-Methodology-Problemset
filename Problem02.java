@@ -12,7 +12,17 @@ public class Problem02 extends Karel{
 		while(noBeepersPresent()){
 			move();
 		}
-		
+		for(int i=0; i<10; i++){
+			pickBeeper();
+			move();
+			putBeeper();
+			turnLeft();
+			turnLeft();
+			move();
+			turnLeft();
+			turnLeft();
+			
+		}
 		}
 	}
 	
