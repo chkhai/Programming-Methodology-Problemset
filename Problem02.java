@@ -6,21 +6,9 @@ import stanford.karel.Karel;
  */
 
 public class Problem02 extends Karel{
+	
+	
 	public void run (){
-		while(noBeepersPresent()){
-			move();
-		}
-		if(beepersPresent()){
-			pickBeeper();
-			move();
-			putBeeper();
-			turnLeft();
-			turnLeft();
-			move();
-			turnLeft();
-			turnLeft();
 		}
 	}
 	
-
-}
