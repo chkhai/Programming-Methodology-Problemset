@@ -12,9 +12,19 @@ public class Problem06 extends Karel {
 		while(noBeepersPresent()){
 			move();
 		}
-		while(beepersPresent()){
+		for(int i=0; i<7; i++){
 			pickBeeper();
 		}
-
+		while(noBeepersPresent()){
+			move();
+		}
+		for(int i=0; i<9; i++){
+			pickBeeper();
+		}
+		move();
+		for(int i=0; i<16; i++){
+			putBeeper();
+		}
+		
 	}
 }
