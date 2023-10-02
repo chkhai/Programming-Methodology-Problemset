@@ -18,7 +18,9 @@ public class Problem07 extends Karel {
 				putBeeper();
 			}
 			if(leftIsClear()){
-				ascend();
+				if(rightIsClear()){
+					ascend();
+				}
 			}
 		}
 	}
