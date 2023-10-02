@@ -14,7 +14,9 @@ public class Problem07 extends Karel {
 			while(frontIsClear()){
 				placeBeepers();
 			}
-			putBeeper();
+			if(noBeepersPresent()){
+				putBeeper();
+			}
 			ascend();
 		}
 	}
