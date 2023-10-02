@@ -32,11 +32,11 @@ public class Problem07 extends Karel {
 		if(facingEast()){
 			turnLeft();
 			move();
-			turnRight();
+			turnLeft();
 		}else{
 			turnRight();
 			move();
-			turnLeft();
+			turnRight();
 		}
 	}
 	
