@@ -11,7 +11,7 @@ public class Problem07 extends Karel {
 	
 	public void run(){
 		while(frontIsClear()){
-			takeBeepers();
+			placeBeepers();
 			ascend();
 		}
 	}
@@ -19,10 +19,10 @@ public class Problem07 extends Karel {
 	
 	
 	
-	private void takeBeepers(){
+	private void placeBeepers(){
 		while(frontIsClear()){
-			if(beepersPresent()){
-				pickBeeper();
+			if(noBeepersPresent()){
+				putBeeper();
 			}
 			move();
 		}
