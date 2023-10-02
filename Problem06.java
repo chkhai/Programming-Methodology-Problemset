@@ -9,22 +9,30 @@ public class Problem06 extends Karel {
 	
 	
 	public void run(){
-		while(noBeepersPresent()){
-			move();
-		}
-		for(int i=0; i<7; i++){
+		move();
+		while(beepersPresent()){
 			pickBeeper();
-		}
-		while(noBeepersPresent()){
 			move();
-		}
-		for(int i=0; i<9; i++){
-			pickBeeper();
+			move();
+			putBeeper();
+			turnAround();
+			move();
+			move();
+			turnAround();
 		}
 		move();
-		for(int i=0; i<16; i++){
+		while(beepersPresent()){
+			pickBeeper();
+			move();
 			putBeeper();
+			turnAround();
+			move();
+			turnAround();
 		}
-		
+	}
+	
+	private void turnAround(){
+			turnLeft();
+			turnLeft();
 	}
 }
