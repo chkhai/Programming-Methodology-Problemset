@@ -40,12 +40,13 @@ public class Problem07 extends Karel {
 			move();
 			turnLeft();
 		}else{
-			turnRight();
-			move();
-			turnRight();
+			if(rightIsClear()){
+				turnRight();
+				move();
+				turnRight();
+			}
 		}
 	}
-	
 	
 	private void turnRight(){
 		turnLeft();
