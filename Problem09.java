@@ -6,24 +6,8 @@ public class Problem09 extends SuperKarel {
 //კარელს ჩანთაში უსასრულო რაოდენობის ბრილიანტი აქვს.
 	
 	public void run(){
-		move();
-		while(beepersPresent()){
-			multiply();
-		}
-	}
-
-	private void multiply() {
-		pickBeeper();
-		move();
-		while(beepersPresent()){
-			pickBeeper();
-			move();
-			putBeeper();
-			turnAround();
-			move();
-			turnAround();
-			putBeeper();
-		}
+		
+	
 	}
 	
 }
