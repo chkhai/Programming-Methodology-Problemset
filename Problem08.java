@@ -18,5 +18,11 @@ public class Problem08 extends SuperKarel {
 			move();
 				
 		}
+		placeBeepers();
+	}
+	
+	
+	private void placeBeepers(){
+		
 	}
 }
