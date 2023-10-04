@@ -25,6 +25,15 @@ public class Problem08 extends SuperKarel {
 	
 	
 	private void placeBeepers(){
-		
+		while(beepersPresent()){
+			pickBeeper();
+			move();
+			move();
+			putBeeper();
+			turnAround();
+			move();
+			move();
+			turnAround();
+		}
 	}
 }
