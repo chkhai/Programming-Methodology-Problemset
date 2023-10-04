@@ -7,7 +7,16 @@ public class Problem08 extends SuperKarel {
 	
 	
 	public void run(){
-		
+		move();
+		move();
+		while(beepersPresent()){
+			pickBeeper();
+			turnAround();
+			move();
+			pickBeeper();
+			turnAround();
+			move();
+				
+		}
 	}
-
 }
