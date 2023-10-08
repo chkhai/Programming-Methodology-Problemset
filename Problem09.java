@@ -11,14 +11,6 @@ public class Problem09 extends SuperKarel {
 			pickBeeper();
 			backUp();
 			move();
-			while(beepersPresent()){
-				pickBeeper();
-				backUp();
-				move();
-				putBeeper();
-				backUpToFirstRow();
-			}
-			backUpToFirstRow();
 		}
 	}
 
