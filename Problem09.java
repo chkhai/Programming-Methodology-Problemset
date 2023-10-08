@@ -7,33 +7,6 @@ public class Problem09 extends SuperKarel {
 	
 	public void run(){
 		move();
-		while(beepersPresent()){
-			pickBeeper();
-			backUp();
-			move();
-			while(beepersPresent()){
-				pickBeeper();
-				backUp();
-				move();
-				putBeeper();
-				turnAround();
-				move();
-				move();
-				turnAround();
-			}
-		}
-	}
-
-	private void backUpToFirstRow() {
 		
-}
-
-	private void backUp() {
-		turnLeft();
-		move();
-		putBeeper();
-		turnAround();
-		move();
-		turnLeft();
 	}
 }
