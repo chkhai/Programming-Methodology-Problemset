@@ -10,7 +10,6 @@ public class Problem09 extends SuperKarel {
 		while(beepersPresent()){
 			pickBeeper();
 			backUp();
-			move();
 		}
 	}
 
