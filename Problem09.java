@@ -5,6 +5,8 @@ public class Problem09 extends SuperKarel {
 //m ცალი ბრილიანტი, კარელმა 4x1 უჯრაზე უნდა დადოს n * m ბრილიანტი. ჩათვალეთ, რომ
 //კარელს ჩანთაში უსასრულო რაოდენობის ბრილიანტი აქვს.
 	
-	public void run(){}
+	public void run(){
+		
+	}
 	
 }
