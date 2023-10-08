@@ -16,11 +16,15 @@ public class Problem09 extends SuperKarel {
 				backUp();
 				move();
 				putBeeper();
-//				backUpToFirstRow();
+				backUpToFirstRow();
 			}
-	//		backUpToFirstRow();
+			backUpToFirstRow();
 		}
 	}
+
+	private void backUpToFirstRow() {
+		
+}
 
 	private void backUp() {
 		turnLeft();
