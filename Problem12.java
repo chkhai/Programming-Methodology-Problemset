@@ -19,7 +19,6 @@ public class Problem12 extends GraphicsProgram {
 		rugbyBall.setColor(Color.CYAN);
 		
 		oldBall.setFilled(true);
-		oldBall.setColor(Color.PINK);
 		
 	}
 }
