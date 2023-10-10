@@ -12,9 +12,14 @@ public class Problem12 extends GraphicsProgram {
 		rugbyBall = new GOval(200, 200);
 		add(rugbyBall, 200, 200);
 		
+		GOval oldBall = rugbyBall;
+		
 		add(rugbyBall);
 		rugbyBall.setFilled(true);
 		rugbyBall.setColor(Color.CYAN);
+		
+		oldBall.setFilled(true);
+		oldBall.setColor(Color.PINK);
 		
 	}
 }
