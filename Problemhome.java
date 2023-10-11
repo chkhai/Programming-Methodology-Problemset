@@ -6,5 +6,6 @@ public class Problemhome extends GraphicsProgram{
 		GRect rect = new GRect(160, 160, 400, 200);
 		add(rect);
 		GLine line = new GLine(160, 160, 360, 80);
+		add(line);
 	}
 }
