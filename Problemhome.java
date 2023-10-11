@@ -9,6 +9,7 @@ public class Problemhome extends GraphicsProgram{
 		add(line);
 		GLine SecondLine = new GLine(560, 160, 360, 80);
 		add(SecondLine);
-		GRect door = new GRect(200, 260, 80, 20)
+		GRect door = new GRect(200, 260, 80, 20);
+		add(door);
 	}
 }
