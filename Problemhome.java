@@ -7,5 +7,7 @@ public class Problemhome extends GraphicsProgram{
 		add(rect);
 		GLine line = new GLine(160, 160, 360, 80);
 		add(line);
+		GLine SecondLine = new GLine(560, 160, 360, 80);
+		add(SecondLine);
 	}
 }
