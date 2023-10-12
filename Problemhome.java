@@ -10,6 +10,19 @@ public class Problemhome extends GraphicsProgram{
 	
 	public void run(){
 		drawMidLine();
+		drawHouse();
+	}
+
+	private void drawHouse() {
+		drawWall();
+		drawRoof();
+		drawDoor();
+		drawWindows();
+	}
+
+	private void drawWall() {
+		GRect rect = new GRect (HOUSE_WIDTH, HOUSE_HEIGHT);
+		
 	}
 
 	private void drawMidLine() {
