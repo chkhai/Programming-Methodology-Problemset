@@ -34,6 +34,16 @@ public class Problemhome extends GraphicsProgram{
 		int x = (int) (getWidth() / 2 - HOUSE_WIDTH / 2);
 		double y = getHeight() - HOUSE_HEIGHT;
 		add(rect, x, y);
+		
+		for(int i = 0; i < 2; i++) {
+			if(I == 0) {
+				
+			}else {
+				x1 = x2;
+				y1 = y2;
+				
+			}
+		}
 	}
 
 	private void drawMidLine() {
