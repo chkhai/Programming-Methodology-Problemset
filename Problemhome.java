@@ -11,7 +11,7 @@ public class Problemhome extends GraphicsProgram{
 		double y1 = getHeight() / 2;
 		double x2 = getWidth();
 		double y2 = y1;
-		Gline line = new GLine(x1, y1, x2, y2);
+		GLine line = new GLine(x1, y1, x2, y2);
 		add(line);
 	}
 	
