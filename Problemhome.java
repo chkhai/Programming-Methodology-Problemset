@@ -31,7 +31,7 @@ public class Problemhome extends GraphicsProgram{
 
 	private void drawWall() {
 		GRect rect = new GRect (HOUSE_WIDTH, HOUSE_HEIGHT);
-		int x = (int) (getWidth / 2 - HOUSE_WIDTH / 2);
+		int x = (int) (getWidth() / 2 - HOUSE_WIDTH / 2);
 		double y = getHeight() - HOUSE_HEIGHT;
 		add(rect, x, y);
 	}
