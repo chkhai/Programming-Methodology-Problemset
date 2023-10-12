@@ -9,15 +9,15 @@ public class Problemhome extends GraphicsProgram{
 	private static final double DOOR_HEIGHT = 60;
 	
 	public void run(){
-		drawMidLine();
+		//drawMidLine();
 		drawHouse();
 	}
 
 	private void drawHouse() {
 		drawWall();
-		drawRoof();
-		drawDoor();
-		drawWindows();
+		//drawRoof();
+		//drawDoor();
+		//drawWindows();
 	}
 
 	private void drawWall() {
