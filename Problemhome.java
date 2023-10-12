@@ -2,6 +2,7 @@ import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
 public class Problemhome extends GraphicsProgram{
+	private static final double PI=3.14;
 	public void run(){
 		drawMidLine();
 	}
