@@ -11,7 +11,7 @@ public class Problemhome extends GraphicsProgram{
 			b = 4;
 			b = a + 3;
 			
-			GLabel label = new GLabel ("ap :" + a, 20, 20);
+			GLabel label = new GLabel ("ap :" + a, 0, 0);
 			add(label);
 		}
 		
