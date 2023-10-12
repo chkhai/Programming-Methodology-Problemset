@@ -22,7 +22,9 @@ public class Problemhome extends GraphicsProgram{
 
 	private void drawWall() {
 		GRect rect = new GRect (HOUSE_WIDTH, HOUSE_HEIGHT);
-		
+		int x = getWidth / 2 - HOUSE_WIDHT;
+		int y;
+		add(wall, x, y);
 	}
 
 	private void drawMidLine() {
