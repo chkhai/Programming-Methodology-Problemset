@@ -7,7 +7,8 @@ public class Problemhome extends GraphicsProgram{
 	private static final double HOUSE_HEIGHT = 300;
 	private static final double DOOR_WIDTH = 40;
 	private static final double DOOR_HEIGHT = 60;
-	
+	private static final double ROOF_HEIGHT = 100;
+
 	public void run(){
 		//drawMidLine();
 		drawHouse();
@@ -15,9 +16,17 @@ public class Problemhome extends GraphicsProgram{
 
 	private void drawHouse() {
 		drawWall();
-		//drawRoof();
-		//drawDoor();
-		//drawWindows();
+		drawRoof();
+		drawDoor();
+		drawWindows();
+	}
+
+	private void drawRoof() {
+		double x1 = (int) (getWidth() / 2 - HOUSE_WIDTH / 2);
+		double y1 = getHeight() - HOUSE_HEIGHT;
+		double x2 = getWidth();
+		double y2 = y1;
+		GLine leftRoof = new GLine();
 	}
 
 	private void drawWall() {
