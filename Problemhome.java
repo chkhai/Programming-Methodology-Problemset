@@ -2,7 +2,9 @@ import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
 public class Problemhome extends GraphicsProgram{
-	private static final double PI = 3.14;
+	//constant
+	private static final double HOUSE_WIDTH = 3.14;
+	
 	public void run(){
 		drawMidLine();
 	}
