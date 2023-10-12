@@ -22,7 +22,7 @@ public class Problemhome extends GraphicsProgram{
 
 	private void drawWall() {
 		GRect rect = new GRect (HOUSE_WIDTH, HOUSE_HEIGHT);
-		int x = getWidth / 2 - HOUSE_WIDHT;
+		int x = (int) (getWidth / 2 - HOUSE_WIDHT / 2);
 		int y;
 		add(wall, x, y);
 	}
