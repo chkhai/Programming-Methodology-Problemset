@@ -1,3 +1,4 @@
+import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
 public class Problem14 extends GraphicsProgram{
