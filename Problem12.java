@@ -10,7 +10,8 @@ public class Problem12 extends GraphicsProgram {
 		add(rect);
 		GLine firstline = new GLine (300, 50, 150, 100);
 		add(firstline);
-		GLine seconline = new GLine (300, 50, 450, 100)
+		GLine secondline = new GLine (300, 50, 450, 100);
+		add(secondline)
 		
 	}
 }
