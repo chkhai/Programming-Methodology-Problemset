@@ -12,7 +12,7 @@ public class Problem12 extends GraphicsProgram {
 		add(firstline);
 		GLine secondline = new GLine (300, 50, 450, 100);
 		add(secondline);
-		GRect door = new GRect (270, 250, 100, 150);
+		GRect door = new GRect (250, 250, 100, 150);
 		add(door);
 		
 	}
