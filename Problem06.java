@@ -31,8 +31,10 @@ public class Problem06 extends Karel {
 		}
 	}
 	
-	private void turnAround(){
+	private void turnAround() {
 			turnLeft();
 			turnLeft();
 	}
 }
+
+
