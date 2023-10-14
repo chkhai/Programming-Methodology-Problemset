@@ -9,7 +9,7 @@ public class Problem14 extends GraphicsProgram{
 	}
 
 	private void drawLeftEye() {
-		double x1 =150;
+		double x1 =200;
 		double y1 =150;
 		double x2 =50;
 		double y2 =50;
