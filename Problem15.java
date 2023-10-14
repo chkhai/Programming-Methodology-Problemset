@@ -7,6 +7,6 @@ public class Problem15 extends ConsoleProgram{
 		double a = readInt("Enter a:");
 		double b = readInt("Enter b:");
 		double arithmetic average = a / 2 + b / 2;
-	//	println("The arithmetic average is" + arithmetic average + ".");
+		println("arithmetic average");
 	}
 }
