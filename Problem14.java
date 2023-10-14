@@ -8,7 +8,7 @@ public class Problem14 extends GraphicsProgram{
 	}
 
 	private void drawFace() {
-		double x1 = getHeight() / 2 - 150;
+		double x1 = getHeight() / 2 - 50;
 		double y1 = getWidth() / 2 - 250;
 		double x2 = 300;
 		double y2 = 300;
