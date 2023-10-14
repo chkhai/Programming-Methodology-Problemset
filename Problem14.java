@@ -4,14 +4,14 @@ import acm.program.GraphicsProgram;
 public class Problem14 extends GraphicsProgram{
 	
 	public void run() {
-		drawRobot();
+		drawFace();
 	}
 
-	private void drawRobot() {
-		double x1 = getHeight() / 2 - 100;
-		double y1 = getWidth() / 2 - 100;
-		double x2 = 200;
-		double y2 = 200;
+	private void drawFace() {
+		double x1 = getHeight() / 2 - 150;
+		double y1 = getWidth() / 2 - 150;
+		double x2 = 300;
+		double y2 = 300;
 		GRect face = new GRect(x1, y1, x2, y2);
 		add(face);
 	}
