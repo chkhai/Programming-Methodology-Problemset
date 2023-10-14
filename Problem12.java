@@ -11,7 +11,7 @@ public class Problem12 extends GraphicsProgram {
 		GLine firstline = new GLine (300, 50, 150, 100);
 		add(firstline);
 		GLine secondline = new GLine (300, 50, 450, 100);
-		add(secondline)
+		add(secondline);
 		
 	}
 }
