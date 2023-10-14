@@ -21,7 +21,7 @@ public class Problem14 extends GraphicsProgram{
 
 	private void drawLeftEye() {
 		double x1 =getHeight() / 2 - 50;
-		double y1 =getWidth() /2 - 300;
+		double y1 =getWidth() /2 - 200;
 		double x2 =50;
 		double y2 =50;
 		GRect eye = new GRect(x1, y1, x2, y2);
