@@ -9,15 +9,15 @@ public class Problem14 extends GraphicsProgram{
 	//	drawRightEye();
 	}
 
-//	private void drawRightEye() {
-	//	double x1 =;
-		//double y1 =;
-		//double x2 =;
-		//double y2 =;
-		//GRect eye = new GRect(x1, y1, x2, y2);
-		//add(eye);
+	private void drawRightEye() {
+		double x1 = getHeight() / 2 + 10;
+		double y1 = getWidth() / 2 + 250;
+		double x2 =50;
+		double y2 =50;
+		GRect eye = new GRect(x1, y1, x2, y2);
+		add(eye);
 		
-	//}
+	}
 
 	private void drawLeftEye() {
 		double x1 =getHeight() / 2 - 10;
