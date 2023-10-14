@@ -5,6 +5,12 @@ public class Problem14 extends GraphicsProgram{
 	
 	public void run() {
 		drawFace();
+		drawEyes();
+	}
+
+	private void drawEyes() {
+		// TODO Auto-generated method stub
+		
 	}
 
 	private void drawFace() {
