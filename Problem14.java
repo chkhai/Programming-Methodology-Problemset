@@ -6,6 +6,16 @@ public class Problem14 extends GraphicsProgram{
 	public void run() {
 		drawFace();
 		drawLeftEye();
+		drawRightEye();
+	}
+
+	private void drawRightEye() {
+		double x1;
+		double y1;
+		double x2;
+		double y2;
+		GRect eye = new GRect(x1, y1, x2, y2);
+		
 	}
 
 	private void drawLeftEye() {
