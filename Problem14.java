@@ -14,6 +14,7 @@ public class Problem14 extends GraphicsProgram{
 		double x2 =50;
 		double y2 =50;
 		GRect eye = new GRect(x1, y1, x2, y2);
+		add(eye);
 	}
 
 	private void drawFace() {
