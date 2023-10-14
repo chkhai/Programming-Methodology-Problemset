@@ -5,12 +5,15 @@ public class Problem14 extends GraphicsProgram{
 	
 	public void run() {
 		drawFace();
-		drawEyes();
+		drawLeftEye();
 	}
 
-	private void drawEyes() {
-		// TODO Auto-generated method stub
-		
+	private void drawLeftEye() {
+		double x1 =150;
+		double y1 =150;
+		double x2 =50;
+		double y2 =50;
+		GRect eye = new GRect(x1, y1, x2, y2);
 	}
 
 	private void drawFace() {
