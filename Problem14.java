@@ -14,8 +14,8 @@ public class Problem14 extends GraphicsProgram{
 		double y1 = getWidth() / 2 + 150;
 		double x2 =50;
 		double y2 =50;
-		GRect righteye = new GRect(x1, y1, x2, y2);
-		add(righteye);
+		GRect eye = new GRect(x1, y1, x2, y2);
+		add(eye);
 		
 	}
 
