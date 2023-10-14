@@ -6,7 +6,7 @@ public class Problem14 extends GraphicsProgram{
 	public void run() {
 		drawFace();
 		drawLeftEye();
-	//	drawRightEye();
+		drawRightEye();
 	}
 
 	private void drawRightEye() {
