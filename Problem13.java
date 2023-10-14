@@ -3,7 +3,14 @@ import acm.program.GraphicsProgram;
 public class Problem13 extends GraphicsProgram{
 	
 	public void run() {
-		GLine line = new line (0, getHeight() / 2, getWidth(), getHeight() / 2);
-		add(line);
+		drawMiddleLine();
+	}
+
+	private void drawMiddleLine() {
+		double x1 = 0;
+		double y1 = getHeight() / 2;
+		double x2 = getWidth();
+		double y1 = y2;
+		GLine line = new GLine(x1, y1, x2, y2);
 	}
 }
