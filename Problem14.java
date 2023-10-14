@@ -11,7 +11,7 @@ public class Problem14 extends GraphicsProgram{
 
 	private void drawRightEye() {
 		double x1 = getHeight() / 2 + 10;
-		double y1 = getWidth() / 2 + 250;
+		double y1 = getWidth() / 2 + 150;
 		double x2 =50;
 		double y2 =50;
 		GRect righteye = new GRect(x1, y1, x2, y2);
