@@ -22,6 +22,8 @@ public class Problem12 extends GraphicsProgram {
 		house.setColor(Color.LIGHT_GRAY);
 		door.setFilled(true);
 		door.setColor(Color.GREEN);
+		firstwindow.setFilled(true);
+		firstwindow.setColor(Color.darkGray);
 		
 	}
 }
