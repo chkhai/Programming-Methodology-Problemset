@@ -29,8 +29,8 @@ public class Problem14 extends GraphicsProgram{
 	}
 
 	private void drawFace() {
-		double x1 = getHeight() / 2 - 10;
-		double y1 = getWidth() / 2 - 10;
+		double x1 = getHeight() / 2 - 200;
+		double y1 = getWidth() / 2 - 200;
 		double x2 = 300;
 		double y2 = 300;
 		GRect face = new GRect(x1, y1, x2, y2);
