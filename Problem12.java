@@ -19,6 +19,6 @@ public class Problem12 extends GraphicsProgram {
 		GRect secondwindow = new GRect (350, 150, 50, 50);
 		add(secondwindow);
 		firstwindow.setFilled(true);
-		wall.setColor(Color.lightGray);
+		firstwindow.setColor(Color.LIGHT_GRAY);
 	}
 }
