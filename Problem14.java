@@ -20,7 +20,7 @@ public class Problem14 extends GraphicsProgram{
 	}
 
 	private void drawLeftEye() {
-		double x1 =getHeight() - 50;
+		double x1 =getHeight() - 10;
 		double y1 =getWidth() - 300;
 		double x2 =50;
 		double y2 =50;
