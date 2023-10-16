@@ -26,5 +26,6 @@ public class Problem12 extends GraphicsProgram {
 		firstwindow.setColor(Color.darkGray);
 		secondwindow.setFilled(true);
 		secondwindow.setColor(Color.darkGray);
+		GOval handle = new GOval(30,30,30,30);
 	}
 }
