@@ -8,6 +8,8 @@ public class Problem18 extends ConsoleProgram{
 		double b = readInt("Enter real number: ");
 		if(a > b){
 			println(a);
+		}else{
+			println(b);
 		}
 	}
 }
