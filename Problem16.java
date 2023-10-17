@@ -6,7 +6,7 @@ public class Problem16 extends ConsoleProgram{
 		int a = readInt("Enter a: ");
 		int b = readInt("Enter b: ");
 		int c = readInt("Enter c: ");
-		double harmonicaverage = (double)(1 / (a + b + c));
+		double harmonicaverage = (double)(1 / (double)(a + b + c));
 		println("Harmonic average is " + harmonicaverage + ".");
 	}
 
