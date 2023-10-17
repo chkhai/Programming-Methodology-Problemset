@@ -6,7 +6,7 @@ public class Problem18 extends ConsoleProgram{
 	public void run() {
 		double a = readInt("Enter real number: ");
 		double b = readInt("Enter real number: ");
-		if(a > b){
+		if(a > b) {
 			println(a);
 		}else{
 			println(b);
