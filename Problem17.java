@@ -14,8 +14,8 @@ public class Problem17 extends ConsoleProgram{
 		int integerPart = (int)a;
 		double fractionPart = a - integerPart;
 		
-		println("integerPart" + integerPart);
-		println("fractionPart" + fractionPart);
+		println("integerPart is: " + integerPart);
+		println("fractionPart is: " + fractionPart);
 		
 	}
 }
