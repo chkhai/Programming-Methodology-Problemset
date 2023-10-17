@@ -6,6 +6,6 @@ public class Problem19 extends ConsoleProgram{
 //	იცვლება 0 დან n-1 მდე.
 	public void run() {
 		double n = readInt("Enter real number");
-		}
+		for()
 	}
 }
