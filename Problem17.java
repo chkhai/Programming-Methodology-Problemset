@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+
 import acm.program.ConsoleProgram;
 
 /*კონსოლიდან წაიკითხეთ ნამდვილი რიცხვი და დაბეჭდეთ მისი მთელი ნაწილი და მისი
@@ -18,4 +20,14 @@ public class Problem17 extends ConsoleProgram{
 		println("fractionPart is: " + fractionPart);
 		
 	}
+	
+	
+	//private void calculateInDouble(double a) {
+		//BigDecimal decimal = new BigDecimal("" + a);
+		
+//	}
 }
+
+
+
+
