@@ -15,14 +15,6 @@ public class Problem16 extends ConsoleProgram{
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 	
 
