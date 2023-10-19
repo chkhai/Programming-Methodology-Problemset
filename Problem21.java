@@ -1,3 +1,4 @@
+import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
 public class Problem21 extends GraphicsProgram{
@@ -13,6 +14,7 @@ public class Problem21 extends GraphicsProgram{
 		double y = i * (getHeight() / (NUM_LINES - 1.0));
 		double x1 = 0;
 		double x2 = getWidth();
-		GLine line = new GLine (x1, y1, x2, y2);
+		GLine line = new GLine (x1, y, x2, y);
+		add(line);
 	}
 }
