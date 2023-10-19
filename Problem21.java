@@ -14,7 +14,8 @@ public class Problem21 extends GraphicsProgram{
 	private void drawVerticalLine(int i) {
 		double x = i * (getWidth() / (NUM_LINES - 1.0));
 		double y1 = 0;
-		double y2 = getHeigth()
+		double y2 = getHeigth();
+		GLine line = new GLine (x, y1, x, y2);
 	}
 
 	private void drawHorisontalLine(int i) {
