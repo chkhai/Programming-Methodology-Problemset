@@ -7,7 +7,7 @@ public class Problem24 extends ConsoleProgram{
 		int quantity = 0;
 		for(int i = 1; i < n+1; i++) {
 			if(n % i == 0){
-				quantity += quantity;
+				quantity = quantity + 1;
 			}
 			//quantity = quantity + 1;
 		}
