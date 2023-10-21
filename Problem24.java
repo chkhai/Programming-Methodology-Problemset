@@ -9,7 +9,6 @@ public class Problem24 extends ConsoleProgram{
 			if(n % i == 0){
 				quantity = quantity + 1;
 			}
-			//quantity = quantity + 1;
 		}
 		println(quantity);
 	}
