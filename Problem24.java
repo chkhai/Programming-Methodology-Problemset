@@ -6,8 +6,9 @@ public class Problem24 extends ConsoleProgram{
 		int n = readInt("Enter real number: ");
 		int quantity = 0;
 		for(int i = 1; i < n+1 & n % i == 0; i++) {
-			quantity = quantity + 1;
+			println(1);
+			//quantity = quantity + 1;
 		}
-		println(quantity);
+		//println(quantity);
 	}
 }
