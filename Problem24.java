@@ -8,8 +8,8 @@ public class Problem24 extends ConsoleProgram{
 		for(int i = 1; i < n+1; i++) {
 			if(n % i == 0){
 				k = k + 1;
+				int k = 0;
 			}
-			println(k);
 		}
 	}
 }
