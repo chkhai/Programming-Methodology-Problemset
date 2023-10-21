@@ -4,7 +4,7 @@ import acm.program.ConsoleProgram;
 public class Problem24 extends ConsoleProgram{
 	public void run() {
 		int n = readInt("Enter real number: ");
-		int quantity = 0;
+		//int quantity = 0;
 		for(int i = 1; i < n+1 & n % i == 0; i++) {
 			println(1);
 			//quantity = quantity + 1;
