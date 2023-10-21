@@ -10,6 +10,6 @@ public class Problem24 extends ConsoleProgram{
 				quantity = quantity + 1;
 			}
 		}
-		println(quantity);
+		println("The number of n's dividers are " + quantity);
 	}
 }
