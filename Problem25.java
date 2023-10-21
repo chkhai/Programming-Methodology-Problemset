@@ -5,7 +5,6 @@ public class Problem25 extends ConsoleProgram{
 	public void run() {
 		int a = readInt("Enter real number: ");
 		int b = readInt("Enter real number: ");
-		int lcm = a*b;
-		println(lcm);
+		
 	}
 }
