@@ -9,6 +9,6 @@ public class BonusProblem81 extends GraphicsProgram{
 	public void run() {
 		GLabel london = new GLabel("london");
 		london.setFont(Font.SERIF);
-		add(london,  0, getHeight());
+		add(london, getHeight()-london.getWidth()/2, getWidth()- london.getAscent());
 	}
 }
