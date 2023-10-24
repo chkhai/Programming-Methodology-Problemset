@@ -8,7 +8,7 @@ import acm.program.GraphicsProgram;
 public class BonusProblem81 extends GraphicsProgram{
 	public void run() {
 		GLabel london = new GLabel("london");
-		london.setFont(Font.SERIF,);
+		london.setFont(Font.SERIF);
 		add(london, getHeight()/2, getWidth()/2);
 	}
 }
