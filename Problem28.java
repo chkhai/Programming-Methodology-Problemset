@@ -9,9 +9,9 @@ public class Problem28 extends ConsoleProgram{
 			int n = readInt("Enter integer: ");
 			if(n % 2 ==0){
 				count += count;
-				if(n == q){
-					break;
-				}
+			}
+			if(n == q){
+				break;
 			}
 		}
 		println(count);
