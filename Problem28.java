@@ -10,7 +10,7 @@ public class Problem28 extends ConsoleProgram{
 			if(n % 2 ==0){
 				sum += sum;
 			}
-			if(n = q){
+			if(n == q){
 				break;
 			}
 		}
