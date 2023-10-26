@@ -14,5 +14,6 @@ public class Problem28 extends ConsoleProgram{
 				count += count;
 			}
 		}
+		println(count);
 	}
 }
