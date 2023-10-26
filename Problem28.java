@@ -5,15 +5,18 @@ public class Problem28 extends ConsoleProgram{
 	
 	public void run() {
 		int count = 0;
+		checkEvens(count);
+
+		println(count);
+	}
+
+	private int checkEvens(int count) {
 		while(true){
 			int n = readInt("Enter integer: ");
-			if(n % 2 ==0){
+			if(n % 2 ==0 && n != q){
 				count += count;
 			}
-			if(n == q){
-				break;
-			}
+		return count;
 		}
-		println(count);
 	}
 }
