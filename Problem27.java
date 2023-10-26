@@ -9,7 +9,7 @@ public class Problem27 extends ConsoleProgram{
 		println("n powered by n is " + k);
 	}
 
-	private void power(int n, int m, int k) {
+	private int power(int n, int m, int k) {
 		for(int i = 0; i < m; i++) {
 			k = k * n;
 		}
