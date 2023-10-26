@@ -4,7 +4,7 @@ public class Problem28 extends ConsoleProgram{
 	private static final int q = -1;
 	
 	public void run() {
-		int sum = 0;
+		int count = 0;
 		while(true){
 			int n = readInt("Enter integer: ");
 			if(n % 2 ==0){
@@ -14,5 +14,6 @@ public class Problem28 extends ConsoleProgram{
 				break;
 			}
 		}
+		println(count);
 	}
 }
