@@ -8,6 +8,6 @@ public class Problem27 extends ConsoleProgram{
 		for(int i = 0; i < m; i++) {
 			k = k * n;
 		}
-		println(k);
+		println("n powered by n is "k);
 	}
 }
