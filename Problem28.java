@@ -8,10 +8,10 @@ public class Problem28 extends ConsoleProgram{
 		while(true){
 			int n = readInt("Enter integer: ");
 			if(n % 2 ==0){
+				count += count;
 				if(n == q){
 					break;
 				}
-				count += count;
 			}
 		}
 		println(count);
