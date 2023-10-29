@@ -6,8 +6,14 @@ public class mesameAmocana extends GraphicsProgram{
 	private static final int RECT_WIDTH = 30;
 
 	public void run() {
-		GLabel program = new GLabel("Program");
-		add(program, getWidth() / 2 - program.getWidth(), getHeight() / 2 - program.getAscent());
+		drawConsoleProgramRectAndLabel();
+	}
+
+	private void drawConsoleProgramRectAndLabel() {
+		double x = getWidth() / 2 - RECT_WIDTH;
+		double y = getHeight() / 2 - RECT_HEIGHT;
+		GRect consoleProgram = new GRect(x, y, RECT_WIDTH, RECT_HEIGHT);
+		add(cosoleProgram);
 		
 	}
 }
