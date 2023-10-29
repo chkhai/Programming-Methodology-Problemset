@@ -2,8 +2,8 @@ import acm.graphics.*;
 import acm.program.GraphicsProgram;
 //not finished
 public class mesameAmocana extends GraphicsProgram{
-	private static final int RECT_HEIGHT = 12;
-	private static final int RECT_WIDTH = 30;
+	private static final int RECT_HEIGHT = 50;
+	private static final int RECT_WIDTH = 100;
 
 	public void run() {
 		drawConsoleProgramRectAndLabel();
