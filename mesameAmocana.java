@@ -1,4 +1,4 @@
 
-public class mesameAmocana {
+public class mesameAmocana extends GraphicsProgram{
 
 }
