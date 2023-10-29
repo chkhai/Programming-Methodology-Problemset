@@ -7,8 +7,11 @@ public class Problem28 extends ConsoleProgram{
 		int count = 0;
 		while(true){
 			int n = readInt("Enter integer: ");
-			if(n % 2 ==0 && n != q){
+			if(n % 2 ==0){
 				count += count;
+			}
+			if(n == q){
+				break;
 			}
 		println(count);
 	}
