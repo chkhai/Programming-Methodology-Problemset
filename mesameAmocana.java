@@ -10,6 +10,11 @@ public class mesameAmocana extends GraphicsProgram{
 		drawConsoleProgramRectAndLabel();
 		drawGraphicsProgramRectAndLabel();
 		drawDialogProgramRectAndLabel();
+		drawProgramRectAndLabel();
+	}
+
+	private void drawProgramRectAndLabel() {
+		
 	}
 
 	private void drawDialogProgramRectAndLabel() {
