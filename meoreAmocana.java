@@ -3,12 +3,16 @@ import java.awt.Color;
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
-public class TargetProblem extends GraphicsProgram{
+public class meoreAmocana extends GraphicsProgram{
 	
 	public void run() {
 		drawFirstCircle();
-	//	drawSecondCircle();
+		drawSecondCircle();
 	//	drawThirdCircle();
+	}
+
+	private void drawSecondCircle() {
+		GOval secondCircle = new GOval
 	}
 
 	private void drawFirstCircle() {
