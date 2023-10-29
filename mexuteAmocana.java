@@ -4,7 +4,7 @@ public class mexuteAmocana extends ConsoleProgram{
 	private static final int q = 0;
 	public void run() {
 		while(true){
-			int k = readInt();
+			int k = readInt("Enter integer: ");
 			if(k == q){
 				println("not " + q);
 				break;
