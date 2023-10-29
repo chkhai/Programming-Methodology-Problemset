@@ -20,8 +20,14 @@ public class mesameAmocana extends GraphicsProgram{
 		double y1 = getHeight() / 2 - HEIGHT_DIFFERENCE_BETWEEN_RECTS;
 		double x2 = getWidth() / 2 - RECT_WIDTH - WIDTH_DIFFERENCE_BETWEEN_RECTS;
 		double y2 = getHeight() / 2;
+		double x3 = getWidth() / 2 + RECT_WIDTH + WIDTH_DIFFERENCE_BETWEEN_RECTS;
+		double y3 = y2;
 		GLine line1 = new GLine(x1, y1, x2, y2);
+		GLine line2 = new GLine(x1, y1, getWidth() / 2, getHeight() / 2);
+		GLine line3 = new GLine(x1, y1, x3, y3);
 		add(line1);
+		add(line2);
+		add(line3);
 	}
 
 	private void drawProgramRectAndLabel() {
