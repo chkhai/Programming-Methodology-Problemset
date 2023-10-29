@@ -7,11 +7,10 @@ public class meekvseAmocana extends ConsoleProgram{
 		while(true){
 			if(n % 2 ==0){
 				n = n / 2;
+				println(n + "is even so I take half");
 			}else{
 				n = 3 * n + 1;
-			}
-			if(n == 1){
-				println(n);
+				println(n + "is odd so I multiply it by 3 and add 1");
 			}
 		}
 	}
