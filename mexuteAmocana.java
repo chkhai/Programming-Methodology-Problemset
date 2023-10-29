@@ -6,6 +6,7 @@ public class mexuteAmocana extends ConsoleProgram{
 		while(true){
 			int k = readInt();
 			if(k == q){
+				println("not " + q);
 				break;
 			}
 		}
