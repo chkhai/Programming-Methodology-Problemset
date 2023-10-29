@@ -9,7 +9,7 @@ public class mexuteAmocana extends ConsoleProgram{
 				println("not " + q);
 				break;
 			}else{
-				
+				println(k);
 			}
 		}
 		
