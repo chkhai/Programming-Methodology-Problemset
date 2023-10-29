@@ -12,6 +12,10 @@ public class meekvseAmocana extends ConsoleProgram{
 				n = 3 * n + 1;
 				println(n + "is odd so I multiply it by 3 and add 1");
 			}
+			if(n == 1){
+				break;
+			}
 		}
+		print("we got 1");
 	}
 }
