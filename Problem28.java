@@ -13,9 +13,8 @@ public class Problem28 extends ConsoleProgram{
 			if(n == q){
 				break;
 			}
+		}
 		println(count);
-	}
-
 	
 	}
 }
