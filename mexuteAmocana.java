@@ -1,5 +1,5 @@
 import acm.program.ConsoleProgram;
-
+//not finished
 public class mexuteAmocana extends ConsoleProgram{
 	private static final int q = 0;
 	public void run() {
