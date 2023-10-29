@@ -7,5 +7,7 @@ public class mesameAmocana extends GraphicsProgram{
 
 	public void run() {
 		GLabel program = new GLabel("Program");
+		add(program, getWidth() / 2 - program.getWidth(), getHeight() / 2 - program.getAscent());
+		
 	}
 }
