@@ -50,7 +50,7 @@ public class mesameAmocana extends GraphicsProgram {
 		double m = x + RECT_WIDTH / 2 - label.getWidth() / 2;
 		double n = y + RECT_HEIGHT / 2 + label.getAscent() / 2;
 		add(label, m, n);
-		
+
 	}
 
 	private void drawGraphicsProgramRectAndLabel() {
