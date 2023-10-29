@@ -3,7 +3,7 @@ import acm.program.GraphicsProgram;
 //not finished
 public class mesameAmocana extends GraphicsProgram{
 	private static final int RECT_HEIGHT = 100;
-	private static final int RECT_WIDTH = 800;
+	private static final int RECT_WIDTH = 400;
 
 	public void run() {
 		drawConsoleProgramRectAndLabel();
