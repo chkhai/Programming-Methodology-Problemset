@@ -30,5 +30,5 @@ public class meoreAmocana extends GraphicsProgram{
 		firstCircle.setFilled(true);
 		firstCircle.setColor(Color.RED);
 		add(firstCircle);
-	}
+	} 
 }
