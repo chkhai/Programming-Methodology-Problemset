@@ -11,7 +11,8 @@ public class mexuteAmocana extends ConsoleProgram{
 			}else{
 				println(k);
 			}
-		}
 		
+		Math.min(k, k);
+		}
 	}
 }
