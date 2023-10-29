@@ -1,5 +1,5 @@
 import acm.program.GraphicsProgram;
-
+//not finisheds
 public class pirveliAmocana extends GraphicsProgram{
 	private static final int BRICK_WIDHT = 30;
 	private static final int BRICK_HEIGHT = 12;
