@@ -8,6 +8,8 @@ public class mexuteAmocana extends ConsoleProgram{
 			if(k == q){
 				println("not " + q);
 				break;
+			}else{
+				
 			}
 		}
 		
