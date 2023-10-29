@@ -9,11 +9,11 @@ public class meekvseAmocana extends ConsoleProgram {
 			if (n % 2 == 0) {
 				println(n + " is even so I take half: " + n / 2);
 				n = n / 2;
-				count += count;
+				count ++;
 			} else {
 				println(n + " is odd, so I make 3n+1:" + (3 * n + 1));
 				n = 3 * n + 1;
-				count += count;
+				count ++;
 			}
 			if (n == 1) {
 				break;
