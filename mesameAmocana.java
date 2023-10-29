@@ -15,6 +15,6 @@ public class mesameAmocana extends GraphicsProgram{
 		GRect rect = new GRect(x, y, RECT_WIDTH, RECT_HEIGHT);
 		add(rect);
 		GLabel label = new GLabel("ConsoleProgram");
-		add(label, x + label.getWidth() / 2, y + label.getAscent());
+		add(label, x + label.getWidth() / 2, y + label.getAscent() / 2);
 	}
 }
