@@ -19,6 +19,6 @@ public class meekvseAmocana extends ConsoleProgram {
 				break;
 			}
 		}
-		print("The process took" + count + " to 1.");
+		print("The process took " + count + " to 1.");
 	}
 }
