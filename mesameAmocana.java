@@ -13,7 +13,7 @@ public class mesameAmocana extends GraphicsProgram{
 		double x = getWidth() / 2 - RECT_WIDTH;
 		double y = getHeight() / 2 - RECT_HEIGHT;
 		GRect consoleProgram = new GRect(x, y, RECT_WIDTH, RECT_HEIGHT);
-		add(cosoleProgram);
+		add(consoleProgram);
 		
 	}
 }
