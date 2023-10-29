@@ -3,8 +3,8 @@ import java.awt.Color;
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
-public class meoreAmocana extends GraphicsProgram{
-	
+public class meoreAmocana extends GraphicsProgram {
+
 	public void run() {
 		drawFirstCircle();
 		drawSecondCircle();
@@ -30,5 +30,5 @@ public class meoreAmocana extends GraphicsProgram{
 		firstCircle.setFilled(true);
 		firstCircle.setColor(Color.RED);
 		add(firstCircle);
-	} 
+	}
 }
