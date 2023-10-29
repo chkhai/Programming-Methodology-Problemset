@@ -9,6 +9,19 @@ public class mesameAmocana extends GraphicsProgram{
 	public void run() {
 		drawConsoleProgramRectAndLabel();
 		drawGraphicsProgramRectAndLabel();
+		drawDialogProgramRectAndLabel();
+	}
+
+	private void drawDialogProgramRectAndLabel() {
+		double x = getWidth() / 2 + 3 * RECT_WIDTH / 2 + DIFFERENCE_BETWEEN_RECTS;
+		double y = getHeight() / 2;
+		GRect rect = new GRect(x, y, RECT_WIDTH, RECT_HEIGHT);
+		add(rect);
+		GLabel label = new GLabel("GraphicsProgram");
+		double m = x + RECT_WIDTH / 2 - label.getWidth() / 2;
+		double n = y + RECT_HEIGHT / 2 + label.getAscent() / 2;
+		add(label, m, n);
+		
 	}
 
 	private void drawGraphicsProgramRectAndLabel() {
