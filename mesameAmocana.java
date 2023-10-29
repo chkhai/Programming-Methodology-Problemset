@@ -12,7 +12,7 @@ public class mesameAmocana extends GraphicsProgram{
 	}
 
 	private void drawGraphicsProgramRectAndLabel() {
-		double x = getWidth() / 2 - 3 * RECT_HEIGHT / 2 - DIFFERENCE_BETWEEN_RECTS;
+		double x = getWidth() / 2 - 3 * RECT_WIDTH / 2 - DIFFERENCE_BETWEEN_RECTS;
 		double y = getHeight() / 2;
 		GRect rect = new GRect(x, y, RECT_WIDTH, RECT_HEIGHT);
 		add(rect);
