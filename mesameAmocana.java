@@ -2,10 +2,10 @@ import acm.graphics.*;
 import acm.program.GraphicsProgram;
 //not finished
 public class mesameAmocana extends GraphicsProgram{
-	private static final int RECT_HEIGHT = 80;
-	private static final int RECT_WIDTH = 200;
-	private static final int WIDTH_DIFFERENCE_BETWEEN_RECTS = 30;
-	private static final int HEIGHT_DIFFERENCE_BETWEEN_RECTS = 40;
+	private static final int RECT_HEIGHT = 200;
+	private static final int RECT_WIDTH = 400;
+	private static final int WIDTH_DIFFERENCE_BETWEEN_RECTS = 60;
+	private static final int HEIGHT_DIFFERENCE_BETWEEN_RECTS = 80;
 
 	public void run() {
 		drawConsoleProgramRectAndLabel();
