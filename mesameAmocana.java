@@ -10,8 +10,8 @@ public class mesameAmocana extends GraphicsProgram{
 	}
 
 	private void drawConsoleProgramRectAndLabel() {
-		double x = getWidth() / 2 - RECT_WIDTH;
-		double y = getHeight() / 2 - RECT_HEIGHT;
+		double x = getWidth() / 2 - RECT_WIDTH / 2;
+		double y = getHeight() / 2 - RECT_HEIGHT / 2;
 		GRect consoleProgram = new GRect(x, y, RECT_WIDTH, RECT_HEIGHT);
 		add(consoleProgram);
 		
