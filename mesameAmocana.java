@@ -12,6 +12,16 @@ public class mesameAmocana extends GraphicsProgram{
 		drawGraphicsProgramRectAndLabel();
 		drawDialogProgramRectAndLabel();
 		drawProgramRectAndLabel();
+		drawLines();
+	}
+
+	private void drawLines() {
+		double x1 = getWidth() / 2;
+		double y1 = getHeight() / 2 - HEIGHT_DIFFERENCE_BETWEEN_RECTS;
+		double x2 = getWidth() / 2 - RECT_WIDTH - WIDTH_DIFFERENCE_BETWEEN_RECTS;
+		double y2 = getHeight() / 2;
+		GLine line1 = new GLine(x1, y1, x2, y2);
+		add(line1);
 	}
 
 	private void drawProgramRectAndLabel() {
