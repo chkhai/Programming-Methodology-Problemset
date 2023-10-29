@@ -7,7 +7,13 @@ public class mesameAmocana extends GraphicsProgram{
 
 	public void run() {
 		drawConsoleProgramRectAndLabel();
+		//drawGraphicsProgramRectAndLabel();
 	}
+
+	//private void drawGraphicsProgramRectAndLabel() {
+		
+		
+	//}
 
 	private void drawConsoleProgramRectAndLabel() {
 		double x = getWidth() / 2 - RECT_WIDTH / 2;
