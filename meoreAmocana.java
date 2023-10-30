@@ -26,7 +26,7 @@ public class meoreAmocana extends GraphicsProgram {
 	}
 
 	private void drawFirstCircle() {
-		GOval firstCircle = new GOval(getWidth() / 2 - 72, getHeight() / 2 - 72, 144, 144);
+				GOval firstCircle = new GOval(getWidth() / 2 - 72, getHeight() / 2 - 72, 144, 144);
 		firstCircle.setFilled(true);
 		firstCircle.setColor(Color.RED);
 		add(firstCircle);
