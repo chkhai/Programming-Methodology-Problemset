@@ -17,10 +17,11 @@ public class pirveliAmocana extends GraphicsProgram {
 		for(int j = 1; j < BRICKS_IN_BASE + 1; j++){
 			for(int k =1; k < BRICKS_IN_BASE /2; k++){
 				if(j % 2 != 0){
-					double x = getWidth() / 2 - BRICK_WIDTH * (BRICKS_IN_BASE - j);
+					double x = getWidth() / 2 - BRICK_WIDTH * (BRICKS_IN_BASE / 2 - j);
 					double y = getHeight() - j * BRICK_HEIGHT;
 					GRect rect = new GRect(x, y, BRICK_WIDTH, BRICK_HEIGHT);
 					add(rect);
+				//	double m = getWidth() /2 + BRICK_WIDTH
 				} else {
 					double x = getWidth() / 2 - BRICK_WIDTH / 2 - (BRICKS_IN_BASE - j) * BRICK_WIDTH;
 					double y = getHeight() - j * BRICK_HEIGHT;
