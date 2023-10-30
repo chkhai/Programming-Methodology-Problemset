@@ -4,7 +4,9 @@ import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
 public class meoreAmocana extends GraphicsProgram {
-
+	private static final double BIG_RADIUS = 72;
+	private static final double MIDDLE_RADIUS = BIG_RADIUS * 165 / 254;
+	private static final double SMALL_RADIUS = BIG_RADIUS * 76 / 254;
 	public void run() {
 		drawFirstCircle();
 		drawSecondCircle();
@@ -26,7 +28,7 @@ public class meoreAmocana extends GraphicsProgram {
 	}
 
 	private void drawFirstCircle() {
-				GOval firstCircle = new GOval(getWidth() / 2 - 72, getHeight() / 2 - 72, 144, 144);
+		GOval firstCircle = new GOval(getWidth() / 2 - BIG_RADIUS, getHeight() / 2 - BIG_RADIUS, 2*BIG_RADIUS, 2*BIG_RADIUS);
 		firstCircle.setFilled(true);
 		firstCircle.setColor(Color.RED);
 		add(firstCircle);
