@@ -23,10 +23,12 @@ public class pirveliAmocana extends GraphicsProgram {
 					add(rect);
 				}
 			} else {
-				double x = getWidth() / 2 - BRICK_WIDTH / 2 - (BRICKS_IN_BASE - j) * BRICK_WIDTH;
-				double y = getHeight() - j * BRICK_HEIGHT;
-				GRect rect = new GRect(x, y, BRICK_WIDTH, BRICK_HEIGHT);
-				add(rect);
+				for(int k = 1; k < BRICKS_IN_BASE / 2 + 1; k++){
+					double x = getWidth() / 2 - BRICK_WIDTH / 2 - (BRICKS_IN_BASE - j) * BRICK_WIDTH;
+					double y = getHeight() - j * BRICK_HEIGHT;
+					GRect rect = new GRect(x, y, BRICK_WIDTH, BRICK_HEIGHT);
+					add(rect);
+				}	
 			}
 		}
 	}
