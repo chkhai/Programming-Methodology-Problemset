@@ -8,17 +8,24 @@ public class pirveliAmocana extends GraphicsProgram {
 	private static final int BRICKS_IN_BASE = 14;
 
 	public void run() {
-		for (int i = 0; i < BRICKS_IN_BASE; i++) {
-			drawHorisontalLineOfBricks(i);
+		for(int i = 0; i < BRICKS_IN_BASE; i++) {
+			makeHorisontalRowOfBricks();
 		}
 	}
 
-	private void drawHorisontalLineOfBricks(int i) {
-		for (int j = 1; j < BRICKS_IN_BASE + 1; j++) {
-			int x = getWidth() / 2 - (BRICKS_IN_BASE / 2) * BRICK_WIDTH;
-			int y = getHeight() - j * BRICK_HEIGHT;
-			GRect brick = new GRect(x, y, BRICK_WIDTH, BRICK_HEIGHT);
-			add(brick);
+	private void makeHorisontalRowOfBricks() {
+		for(int j = 1; j < BRICKS_IN_BASE + 1; j++){
+			if(j % 2 != 0){
+				double x = getWidth() / 2 - BRICK_WIDTH * j;
+				double y = getHeight() - j * BRICK_HEIGHT;
+				GRect rect = new GRect(x, y, BRICK_WIDTH, BRICK_HEIGHT);
+				add(rect);
+			} else {
+				double x = getWidth() / 2 - BRICK_WIDTH / 2 - j * BRICK_WIDTH;
+				double y = getHeight() - j * BRICK_HEIGHT;
+				GRect rect = new GRect(x, y, BRICK_WIDTH, BRICK_HEIGHT);
+				add(rect);
+			}
 		}
 	}
 }
