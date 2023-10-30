@@ -4,7 +4,7 @@ import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
 public class meoreAmocana extends GraphicsProgram {
-	private static final double BIG_RADIUS = 72;
+	private static final double BIG_RADIUS = 100;
 	private static final double MIDDLE_RADIUS = BIG_RADIUS * 165 / 254;
 	private static final double SMALL_RADIUS = BIG_RADIUS * 76 / 254;
 
