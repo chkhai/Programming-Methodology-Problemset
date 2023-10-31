@@ -10,7 +10,7 @@ public class meotxeAmocana extends ConsoleProgram {
 	}
 
 	private double calculatePythagoreanTheorem(int a, int b) {
-		double y = Math.sqrt(a * a + b * b);
+		double y = Math.sqrt(a ^ 2 + b ^ 2);
 		return y;
 	}
 }
