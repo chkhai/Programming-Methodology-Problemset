@@ -17,7 +17,7 @@ public class pirveliAmocana extends GraphicsProgram {
 		double x = getWidth() / 2 - BRICK_WIDTH * (BRICKS_IN_BASE - i)/ 2;
 		double y = getHeight() - i * BRICK_HEIGHT;
 		for(int j = 0; j < BRICKS_IN_BASE; j++){
-			if(i % 2 = 0){
+			if(i % 2 == 0){
 				x = x + BRICK_WIDTH * j ;
 			}else{
 				x = x + BRICK_WIDTH * j + BRICK_WIDTH /2;
