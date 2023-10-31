@@ -8,7 +8,7 @@ public class mexuteAmocana extends ConsoleProgram{
 		while(true){
 			int m = readInt("? ");
 			int prev2 = m;
-			if(prev2 > m){
+			if(prev2 >= m){
 				println(prev2);
 			}
 		}
