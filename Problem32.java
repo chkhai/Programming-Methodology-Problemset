@@ -5,7 +5,7 @@ public class Problem32 extends ConsoleProgram{
 	public void run() {
 		for(int i = 1; i < MAX_NUM; i++) {
 			if(isPrime(i)){
-				
+				println(i);
 			}
 		}
 	}
