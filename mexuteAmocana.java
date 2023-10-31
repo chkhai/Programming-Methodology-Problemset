@@ -7,8 +7,7 @@ public class mexuteAmocana extends ConsoleProgram{
 		int k = readInt("? ");
 		while(true){
 			int m = readInt("? ");
-			if(m>k);
-			println(m);
+			
 		}
 	}
 }
