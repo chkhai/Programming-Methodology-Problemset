@@ -5,7 +5,7 @@ import acm.program.GraphicsProgram;
 public class pirveliAmocana extends GraphicsProgram {
 	private static final int BRICK_WIDTH = 40;
 	private static final int BRICK_HEIGHT = 16;
-	private static final int BRICKS_IN_BASE = 20;
+	private static final int BRICKS_IN_BASE = 14;
 
 	public void run() {
 		for(int i = 0; i < BRICKS_IN_BASE; i++) {
