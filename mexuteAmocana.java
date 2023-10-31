@@ -4,9 +4,11 @@ public class mexuteAmocana extends ConsoleProgram{
 	private static final int SENTINEL = 0;
 	public void run() {
 		println("This program finds smallest and largest numbers. ");
+		int k = readInt("? ");
 		while(true){
-			int k = readInt("? ");
-			
+			int m = readInt("? ");
+			if(m>k);
+			println(m);
 		}
 	}
 }
