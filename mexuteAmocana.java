@@ -5,7 +5,7 @@ public class mexuteAmocana extends ConsoleProgram{
 	public void run() {
 		println("This program finds smallest and largest numbers. ");
 		while(true){
-			int k = readInt("Enter integer: ");
+			int k = readInt("? ");
 			
 		}
 	}
