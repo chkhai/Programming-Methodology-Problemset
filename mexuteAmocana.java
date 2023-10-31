@@ -5,8 +5,8 @@ public class mexuteAmocana extends ConsoleProgram{
 	public void run() {
 		while(true){
 			int k = readInt("Enter integer: ");
-			if(k == q){
-				println("not " + q);
+			if(k == SENTINEL){
+				println("not " + SENTINEL);
 				break;
 			}else{
 				println(k);
