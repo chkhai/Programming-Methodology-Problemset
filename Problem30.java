@@ -18,6 +18,6 @@ public class Problem30 extends ConsoleProgram{
 			
 			
 		}
-		return 0;
+		return reversedNum;
 	}
 }
