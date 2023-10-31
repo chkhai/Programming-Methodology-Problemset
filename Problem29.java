@@ -2,11 +2,13 @@ import acm.program.ConsoleProgram;
 //not finished
 public class Problem29 extends ConsoleProgram{
 	public void run() {
-		int n = readInt("Enter integer: ");
-		
-		int fibN = fib(n);
+		while(true){
+			int n = readInt("Enter integer: ");	
+			int fibN = fib(n);
+			println(fibN);
+	
+		}
 	}
-
 	// indices:  0 1 2 3 4 5 6 
 	// values:   0 1 1 2 3 5 8
 	
