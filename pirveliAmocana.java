@@ -20,7 +20,6 @@ public class pirveliAmocana extends GraphicsProgram {
 		add(rect);
 		for(int j = 0; j<BRICKS_IN_BASE; j++){
 			x = x + BRICK_WIDTH * (BRICKS_IN_BASE - j);
-			GRect rect = new GRect(x, y, BRICK_WIDTH, BRICK_HEIGHT);
 			add(rect);
 		}
 	}
