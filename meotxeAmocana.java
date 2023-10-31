@@ -5,7 +5,8 @@ public class meotxeAmocana extends ConsoleProgram {
 	public void run() {
 		int a = readInt("Enter integer: ");
 		int b = readInt("Enter integer: ");
-		calculatePithagoraemTheorem(a, b);
+		double c = calculatePithagoraemTheorem(a, b);
+		println(c);
 	}
 
 	private double calculatePithagoraemTheorem(int a, int b) {
