@@ -12,6 +12,7 @@ public class Problem35 extends ConsoleProgram{
 			sumFlips += currFlips;
 		}
 		double avgFlips = sumFlips / NUM_EXPERIMENTS;
+		println(avgFlips);
 	}
 	private int holdExperiment() {
 		int numFlips = 0;
