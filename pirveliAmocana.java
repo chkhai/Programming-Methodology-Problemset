@@ -1,3 +1,4 @@
+import acm.graphics
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
@@ -19,8 +20,9 @@ public class pirveliAmocana extends GraphicsProgram {
 		for (int j = 1; j < BRICKS_IN_BASE + 1; j++) {
 			GRect rect = new GRect(x, y, BRICK_WIDTH, BRICK_HEIGHT);
 			add(rect);
-			if(x != x + BRICK_WIDTH * (BRICKS_IN_BASE - j)){
-				x = x + BRICK_WIDTH;
+			x = x + BRICK_WIDTH;
+			if (x == getWidth() / 2 - BRICK_WIDTH * (BRICKS_IN_BASE - i) / 2 + (BRICKS_IN_BASE - j) * BRICK_WIDTH) {
+				break;
 			}
 		}
 	}
