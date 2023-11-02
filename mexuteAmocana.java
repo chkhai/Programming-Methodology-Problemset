@@ -9,12 +9,16 @@ public class mexuteAmocana extends ConsoleProgram{
 		int min = k;
 		while(k != SENTINEL){
 			int m = readInt("?");
+			if(m = SENTINEL){
+				break;
+			}
 			if(m > max){
 				max = m; 
 			}	
 			if(m < min){
 				min = m;
 			}
+			
 		}
 		println(max);
 		println(min);
