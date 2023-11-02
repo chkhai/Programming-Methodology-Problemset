@@ -14,10 +14,14 @@ public class Problem35 extends ConsoleProgram{
 		double avgFlips = sumFlips / NUM_EXPERIMENTS;
 	}
 	private int holdExperiment() {
-		int munFlips = 0;
+		int numFlips = 0;
 		while(true){
-			boolean is Heads = rgen.nextBoolean();
+			numFlips++;
+			boolean isHeads = rgen.nextBoolean();
+			if(isHeads){
+				break;
+			}
 		}
-		return 0;
+		return numFlips;
 	}
 }
