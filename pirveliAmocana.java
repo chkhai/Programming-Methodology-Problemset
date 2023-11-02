@@ -1,4 +1,4 @@
-import acm.graphics
+
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
