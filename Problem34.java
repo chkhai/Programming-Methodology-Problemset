@@ -8,7 +8,7 @@ public class Problem34 extends GraphicsProgram {
 	private static final int MIN_RADIUS = 5;
 	private static final int MAX_RADIUS = 20;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
-	private static final int NUM_CIRCLES = 1000000;
+	private static final int NUM_CIRCLES = 1000;
 
 	public void run() {
 		for (int i = 0; i < NUM_CIRCLES; i++) {
