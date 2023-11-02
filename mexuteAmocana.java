@@ -8,7 +8,7 @@ public class mexuteAmocana extends ConsoleProgram{
 		int max = k;
 		int min = k;
 		while(k != SENTINEL){
-			int m = readInt(" ?");
+			int m = readInt("? ");
 			if(m == SENTINEL){
 				break;
 			}
