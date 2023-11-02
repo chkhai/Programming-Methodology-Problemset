@@ -20,8 +20,8 @@ public class mexuteAmocana extends ConsoleProgram{
 			}
 			
 		}
-		println("largest:" + max);
-		println("smallest" + min);
+		println("largest: " + max);
+		println("smallest: " + min);
 	}
 }
 
