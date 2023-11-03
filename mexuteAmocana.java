@@ -23,9 +23,3 @@ public class mexuteAmocana extends ConsoleProgram{
 		println("smallest: " + min);
 	}
 }
-
-
-//if(k == SENTINEL){
-//println("not " + SENTINEL);
-//break;
-//}
