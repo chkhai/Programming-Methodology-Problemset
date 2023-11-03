@@ -24,19 +24,25 @@ public class meoreAmocana extends GraphicsProgram {
 		thirdCircle.setColor(Color.RED);
 		add(thirdCircle);
 	}
+	
 	/*
-	 * 
 	 */
 	private void drawSecondCircle() {
-		GOval secondCircle = new GOval(getWidth() / 2 - MIDDLE_RADIUS, getHeight() / 2 - MIDDLE_RADIUS,
-				2 * MIDDLE_RADIUS, 2 * MIDDLE_RADIUS);
+		double x = getWidth() / 2 - MIDDLE_RADIUS;
+		double y = getHeight() / 2 - MIDDLE_RADIUS;
+		GOval secondCircle = new GOval(x, y, 2 * MIDDLE_RADIUS, 2 * MIDDLE_RADIUS);
 		secondCircle.setFilled(true);
 		secondCircle.setColor(Color.white);
 		add(secondCircle);
 	}
 
+	/*
+	 * 
+	 */
 	private void drawFirstCircle() {
-		GOval firstCircle = new GOval(getWidth() / 2 - BIG_RADIUS, getHeight() / 2 - BIG_RADIUS, 2 * BIG_RADIUS,
+		double x = getWidth() / 2 - BIG_RADIUS;
+		double y = getHeight() / 2 - BIG_RADIUS;
+		GOval firstCircle = new GOval(x, y, 2 * BIG_RADIUS,
 				2 * BIG_RADIUS);
 		firstCircle.setFilled(true);
 		firstCircle.setColor(Color.RED);
