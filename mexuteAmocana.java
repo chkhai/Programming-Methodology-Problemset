@@ -20,11 +20,11 @@ public class mexuteAmocana extends ConsoleProgram{
 			}
 		}
 		*/	
-		checkNumbers(k, max, min);
+		int m = checkNumbers(k, max, min);
 		println("largest: " + max);
 		println("smallest: " + min);
 	}
-	private void checkNumbers(int k, int max, int min) {
+	private int checkNumbers(int k, int max, int min) {
 		while(k != SENTINEL){
 			int m = readInt("? ");
 			if(m == SENTINEL){
@@ -38,7 +38,7 @@ public class mexuteAmocana extends ConsoleProgram{
 			}
 			
 		}
-		
+		return min;
 	}
 }
 
