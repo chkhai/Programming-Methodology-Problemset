@@ -8,6 +8,9 @@ public class test extends GraphicsProgram{
 		int x = 100;
 		int y = 200;
 		createCircle(x, y, width, height);
+		int m = 200;
+		int w = 300;
+		createCircle(m, w, width, height);
 	}
 	private void createCircle(int x, int y, int width2, int height2) {
 		GOval oval = new GOval(x, y , width, height);
