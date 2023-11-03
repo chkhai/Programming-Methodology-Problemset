@@ -36,7 +36,7 @@ public class meoreAmocana extends GraphicsProgram {
 		add(secondCircle);
 	}
 
-	/*
+	/* This method creates the smallest circle, fills it and colors it red.
 	 */
 	private void drawFirstCircle() {
 		double x = getWidth() / 2 - BIG_RADIUS;
