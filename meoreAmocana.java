@@ -37,7 +37,6 @@ public class meoreAmocana extends GraphicsProgram {
 	}
 
 	/*
-	 * 
 	 */
 	private void drawFirstCircle() {
 		double x = getWidth() / 2 - BIG_RADIUS;
