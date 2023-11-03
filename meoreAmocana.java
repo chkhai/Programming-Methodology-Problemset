@@ -13,15 +13,20 @@ public class meoreAmocana extends GraphicsProgram {
 		drawSecondCircle();
 		drawThirdCircle();
 	}
-
+	
+	/* This method creates the smallest circle, fills it and colors it red.
+	 */
 	private void drawThirdCircle() {
-		GOval thirdCircle = new GOval(getWidth() / 2 - SMALL_RADIUS, getHeight() / 2 - SMALL_RADIUS, 2 * SMALL_RADIUS,
-				2 * SMALL_RADIUS);
+		double x = getWidth() / 2 - SMALL_RADIUS;
+		double y = getHeight() / 2 - SMALL_RADIUS;
+		GOval thirdCircle = new GOval(x, y, 2 * SMALL_RADIUS, 2 * SMALL_RADIUS);
 		thirdCircle.setFilled(true);
 		thirdCircle.setColor(Color.RED);
 		add(thirdCircle);
 	}
-
+	/*
+	 * 
+	 */
 	private void drawSecondCircle() {
 		GOval secondCircle = new GOval(getWidth() / 2 - MIDDLE_RADIUS, getHeight() / 2 - MIDDLE_RADIUS,
 				2 * MIDDLE_RADIUS, 2 * MIDDLE_RADIUS);
