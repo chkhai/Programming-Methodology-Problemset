@@ -1,6 +1,5 @@
 import acm.program.ConsoleProgram;
 
-//not finished
 public class FindRange extends ConsoleProgram {
 	private static final int SENTINEL = 0;
 
