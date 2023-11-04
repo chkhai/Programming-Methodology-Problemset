@@ -3,8 +3,8 @@ import acm.program.ConsoleProgram;
 
 public class Problem31 extends ConsoleProgram{
 	public void run(){
-		int n = readInt("Enter integer: ");
-		int count = 0;
+		double n = readInt("Enter integer: ");
+		double count = 0;
 		checkPrime(n, count);
 		if(count == 2){
 			println(n + " is prime number.");
@@ -13,8 +13,8 @@ public class Problem31 extends ConsoleProgram{
 		}
 	}
 
-	private int checkPrime(int n, int count) {
-		for(int i = 1; i < n; i++){
+	private double checkPrime(double n, double count) {
+		for(double i = 1; i < n; i++){
 			if(n % i == 0){
 				count++;
 			}
