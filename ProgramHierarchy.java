@@ -1,7 +1,7 @@
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
-public class mesameAmocana extends GraphicsProgram {
+public class ProgramHierarchy extends GraphicsProgram {
 	private static final int RECT_HEIGHT = 80;
 	private static final int RECT_WIDTH = 200;
 	private static final int WIDTH_DIFFERENCE_BETWEEN_RECTS = 20;
