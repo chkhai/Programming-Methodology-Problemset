@@ -2,34 +2,19 @@ import acm.program.ConsoleProgram;
 
 public class test extends ConsoleProgram{
 	public void run() {
-		int n = readInt("Enter integer: ");
-		int count = 0;
-		count = FromNtoOne(n, count);
-		print("The process took " + count + " to reach 1.");
+		int a = readInt("Enter integer: ");
+		int b = readInt("Enter integer: ");
+		double c = calculatePythagoreanTheorem(a, b);
+		println("c=" + c);
 	}
 
 	/*
-	 * This method helps us to reach one from n. If n is odd, we multiply it by
-	 * three and add one. The new n is 3*n+1. If n is even, we divide it by two
-	 * and new n is n/2. In both cases count increases by one. When n becomes
-	 * one, the method stops.
-	 * 
+	 * This method helps us compute pythagoreanTheorem. Firstly it calculates
+	 * the sum of a^2 and b^2 and then it takes square root of it.
 	 */
-	private int FromNtoOne(int n, int count) {
-		while (true) {
-			if (n % 2 == 0) {
-				println(n + " is even so I take half: " + n / 2);
-				n = n / 2;
-				count++;
-			} else {
-				println(n + " is odd, so I make 3n+1:" + (3 * n + 1));
-				n = 3 * n + 1;
-				count++;
-			}
-			if (n == 1) {
-				return count;
-			}
-		}
+	private double calculatePythagoreanTheorem(int a, int b) {
+		double y = Math.sqrt(a * a + b * b);
+		return y;
 	}
 }
 	
