@@ -1,7 +1,7 @@
 import acm.program.ConsoleProgram;
 
 //not finished
-public class mexuteAmocana extends ConsoleProgram {
+public class FindRange extends ConsoleProgram {
 	private static final int SENTINEL = 0;
 
 	public void run() {
