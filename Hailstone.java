@@ -1,6 +1,6 @@
 import acm.program.ConsoleProgram;
 
-public class meekvseAmocana extends ConsoleProgram {
+public class Hailstone extends ConsoleProgram {
 
 	public void run() {
 		int n = readInt("Enter integer: ");
