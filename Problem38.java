@@ -14,8 +14,8 @@ public class Problem38 extends ConsoleProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 
 	public void run() {
+		int money = 1000;
 		while (true) {
-			int money;
 			int k = playTheGame(money);
 			if(money == 0){
 				break;
