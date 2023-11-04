@@ -9,7 +9,7 @@ public class Problem37 extends ConsoleProgram{
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	public void run() {
 		int number = readInt("Enter number between 0 and 36: ");
-		if(number > 36 || number < 0){
+		while(number > 36 || number < 0){
 			println("number must be between 0 and 36");
 			int k = readInt("Enter number between 0 and 36: ");
 			number = k;
