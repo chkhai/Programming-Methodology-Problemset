@@ -1,3 +1,4 @@
+
 /*
  * File: FindRange.java
  * Name: 
@@ -13,37 +14,40 @@ public class FindRange extends ConsoleProgram {
 
 	public void run() {
 		println("This program finds smallest and largest numbers. ");
-		int k = readInt("? ");
-		int max = k;
-		int min = k;
+		int firstInteger = readInt("? ");
+		if()
+		int max = firstInteger;
+		int min = firstInteger;
 		while(true){
-			int n = readInt("? ");
-			if (n == SENTINEL){
+			int otherInteger = readInt("? ");
+			if (otherInteger == SENTINEL){
 				break;
 			}
-			max = compareMaxAndN(max, n);
-			min = compareMinAndN(min, n);
+			max = compareMaxAndN(max, otherInteger);
+			min = compareMinAndN(min, otherInteger);
 		}
 		println("largest: " + max);
 		println("smallest: " + min);
 	}
+
 	/*
 	 * This method helps us compare two integers. After comparing them, it keeps
 	 * the track of the smallest one.
 	 */
-	private int compareMinAndN(int min, int n) {
-		if (n < min) {
-			min = n;
+	private int compareMinAndN(int min, int otherInteger) {
+		if (otherInteger < min) {
+			min = otherInteger;
 		}
 		return min;
 	}
+
 	/*
-	 *  This method helps us compare two integers. After comparing them, it keeps
+	 * This method helps us compare two integers. After comparing them, it keeps
 	 * the track of the biggest one.
 	 */
-	private int compareMaxAndN(int max, int n) {
-		if (n > max) {
-			max = n;
+	private int compareMaxAndN(int max, int otherInteger) {
+		if (otherInteger > max) {
+			max = otherInteger;
 		}
 		return max;
 	}
