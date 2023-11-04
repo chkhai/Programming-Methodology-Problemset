@@ -39,9 +39,12 @@ public class Problem38 extends ConsoleProgram {
 			money = money + betMoney;
 			println("Your current money is " + money);
 		} else {
-			println("Unfortunately, You lost. The lucky number was" + luckyNumber + " and you picked " + number);
+			println("Unfortunately, You lost. The lucky number was " + luckyNumber + " and you picked " + number);
 			money = money - betMoney;
 			println("Your current money is " + money);
+		}
+		if(money == 0){
+			println("You don't have any money left! :(");
 		}
 
 	}
