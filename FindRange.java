@@ -1,3 +1,11 @@
+/*
+ * File: FindRange.java
+ * Name: 
+ * Section Leader: 
+ * --------------------
+ * This file is the starter file for the FindRange problem.
+ */
+
 import acm.program.ConsoleProgram;
 
 public class FindRange extends ConsoleProgram {
