@@ -6,6 +6,11 @@ public class Problem31 extends ConsoleProgram{
 		int n = readInt("Enter integer: ");
 		int count = 0;
 		checkPrime(n, count);
+		if(count == 2){
+			println(n + " is prime number.");
+		} else {
+			println(n + " is not prime number.");
+		}
 	}
 
 	private int checkPrime(int n, int count) {
