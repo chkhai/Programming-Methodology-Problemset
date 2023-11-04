@@ -21,6 +21,13 @@ public class mexuteAmocana extends ConsoleProgram {
 		println("smallest: " + min);
 	}
 
+	private int compareMinAndN(int min, int n) {
+		if (n < min) {
+			min = n;
+		}
+		return min;
+	}
+
 	private int compareMaxAndN(int max, int n) {
 		if (n > max) {
 			max = n;
