@@ -27,14 +27,20 @@ public class FindRange extends ConsoleProgram {
 		println("largest: " + max);
 		println("smallest: " + min);
 	}
-
+	/*
+	 * This method helps us compare two integers. After comparing them, it keeps
+	 * the track of the smallest one.
+	 */
 	private int compareMinAndN(int min, int n) {
 		if (n < min) {
 			min = n;
 		}
 		return min;
 	}
-
+	/*
+	 *  This method helps us compare two integers. After comparing them, it keeps
+	 * the track of the biggest one.
+	 */
 	private int compareMaxAndN(int max, int n) {
 		if (n > max) {
 			max = n;
