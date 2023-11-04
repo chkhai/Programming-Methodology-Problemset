@@ -5,6 +5,7 @@
  * ---------------------------
  * This file is the starter file for the ProgramHierarchy problem.
  */
+
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
