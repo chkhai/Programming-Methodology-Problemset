@@ -1,4 +1,6 @@
 
+import java.awt.Color;
+
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
@@ -17,6 +19,9 @@ public class Problem33 extends GraphicsProgram{
 		double x = rgen.nextDouble(0, getWidth() - 2 * radius);
 		double y = rgen.nextDouble(0, getHeight() - 2* radius);
 		GOval oval = new GOval(2*radius, 2*radius);
+		oval.setFilled(true);
+		Color color = rgen.nextColor();
+		oval.setColor(Color color);
 		add(oval, x, y);
 	}
 }
