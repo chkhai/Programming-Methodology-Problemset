@@ -3,7 +3,7 @@ import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
 //not finished
-public class pirveliAmocana extends GraphicsProgram {
+public class Pyramid extends GraphicsProgram {
 	private static final int BRICK_WIDTH = 30;
 	private static final int BRICK_HEIGHT = 12;
 	private static final int BRICKS_IN_BASE = 14;
