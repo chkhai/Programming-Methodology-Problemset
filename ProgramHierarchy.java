@@ -26,8 +26,8 @@ public class ProgramHierarchy extends GraphicsProgram {
 
 	/*
 	 * This method draws lines between rectangles. line1 is between "Program"
-	 * and "GraphicsProgram". line2 is between "Program" and "ConsoleProgram". line3 is 
-	 * between "Program" and "DialogProgram".
+	 * and "GraphicsProgram". line2 is between "Program" and "ConsoleProgram".
+	 * line3 is between "Program" and "DialogProgram".
 	 */
 	private void drawLines() {
 		double x1 = getWidth() / 2;
@@ -43,10 +43,11 @@ public class ProgramHierarchy extends GraphicsProgram {
 		add(line2);
 		add(line3);
 	}
+
 	/*
-	 * This method helps us draw "Program" rectangle. x and y are coordinates
-	 * of the rectangle. After drawing rectangle, method draws label in the center of
-	 * the rectangle.
+	 * This method helps us draw "Program" rectangle. x and y are coordinates of
+	 * the rectangle. After drawing rectangle, method draws label in the center
+	 * of the rectangle.
 	 */
 	private void drawProgramRectAndLabel() {
 		double x = getWidth() / 2 - RECT_WIDTH / 2;
@@ -60,9 +61,9 @@ public class ProgramHierarchy extends GraphicsProgram {
 	}
 
 	/*
-	 * This method helps us draw "DialogProgram" rectangle. x and y are coordinates
-	 * of the rectangle. After drawing rectangle, method draws label in the center of
-	 * the rectangle.
+	 * This method helps us draw "DialogProgram" rectangle. x and y are
+	 * coordinates of the rectangle. After drawing rectangle, method draws label
+	 * in the center of the rectangle.
 	 */
 	private void drawDialogProgramRectAndLabel() {
 		double x = getWidth() / 2 + RECT_WIDTH / 2 + WIDTH_DIFFERENCE_BETWEEN_RECTS;
@@ -75,11 +76,11 @@ public class ProgramHierarchy extends GraphicsProgram {
 		add(label, m, n);
 
 	}
-	
+
 	/*
-	 * This method helps us draw "GraphicsProgram" rectangle. x and y are coordinates
-	 * of the rectangle. After drawing rectangle, method draws label in the center of
-	 * the rectangle.
+	 * This method helps us draw "GraphicsProgram" rectangle. x and y are
+	 * coordinates of the rectangle. After drawing rectangle, method draws label
+	 * in the center of the rectangle.
 	 */
 	private void drawGraphicsProgramRectAndLabel() {
 		double x = getWidth() / 2 - 3 * RECT_WIDTH / 2 - WIDTH_DIFFERENCE_BETWEEN_RECTS;
@@ -91,10 +92,11 @@ public class ProgramHierarchy extends GraphicsProgram {
 		double n = y + RECT_HEIGHT / 2 + label.getAscent() / 2;
 		add(label, m, n);
 	}
+
 	/*
-	 * This method helps us draw "ConsoleProgram" rectangle. x and y are coordinates
-	 * of the rectangle. After drawing rectangle, method draws label in the center of
-	 * the rectangle.
+	 * This method helps us draw "ConsoleProgram" rectangle. x and y are
+	 * coordinates of the rectangle. After drawing rectangle, method draws label
+	 * in the center of the rectangle.
 	 */
 	private void drawConsoleProgramRectAndLabel() {
 		double x = getWidth() / 2 - RECT_WIDTH / 2;
