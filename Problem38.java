@@ -21,7 +21,7 @@ public class Problem38 extends ConsoleProgram {
 	}
 
 	private void playTheGame(int money) {
-		int number = readInt("Enter number between 0 and 36");
+		int number = readInt("Enter number between 0 and 36: ");
 		while (number > 36 || number < 0) {
 			println("Number must be between 0 and 36");
 			int secondNumber = readInt("Enter number between 0 and 36");
