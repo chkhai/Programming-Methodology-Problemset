@@ -1,7 +1,7 @@
 /*
  * File: ProgramHierarchy.java
- * Name: 
- * Section Leader: 
+ * Name: Luka Chkhaidze
+ * Section Leader: Giorgi Tkeshelashvili
  * ---------------------------
  * This file is the starter file for the ProgramHierarchy problem.
  */
