@@ -20,7 +20,7 @@ public class Problem38 extends ConsoleProgram {
 			if(money == 0){
 				break;
 			}
-			println(k);
+			money = k;
 		}
 	}
 
