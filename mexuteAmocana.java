@@ -24,4 +24,14 @@ public class mexuteAmocana extends ConsoleProgram{
 		println("largest: " + max);
 		println("smallest: " + min);
 	}
+	private int compareMandMax(int max) {
+		int m = readInt("? ");
+		if(m == SENTINEL){
+			println("not" + SENTINEL);
+		}
+		if(m > max){
+			max = m; 
+		}
+		return max;
+	}
 }
