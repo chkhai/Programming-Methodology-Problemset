@@ -27,10 +27,10 @@ public class Problem38 extends ConsoleProgram {
 			int secondNumber = readInt("Enter number between 0 and 36");
 			number = secondNumber;
 		}
-		int betMoney = readInt("How much would you like to bet?");
+		int betMoney = readInt("How much would you like to bet? ");
 		while (betMoney > money) {
-			println("You don't have that much money");
-			int secondBetMoney = readInt("How much would you like to bet?");
+			println("You don't have that much money.");
+			int secondBetMoney = readInt("How much would you like to bet? ");
 			betMoney = secondBetMoney;
 		}
 		int luckyNumber = rgen.nextInt(0, 36);
