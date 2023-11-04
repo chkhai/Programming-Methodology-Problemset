@@ -17,10 +17,10 @@ public class Problem38 extends ConsoleProgram {
 		int money = 1000;
 		while (true) {
 			int k = playTheGame(money);
+			money = k;
 			if(money == 0){
 				break;
 			}
-			k = money; 
 		}
 	}
 
