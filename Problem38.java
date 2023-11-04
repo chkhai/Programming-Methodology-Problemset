@@ -23,8 +23,8 @@ public class Problem38 extends ConsoleProgram {
 	private void playTheGame(int money) {
 		int number = readInt("Enter number between 0 and 36: ");
 		while (number > 36 || number < 0) {
-			println("Number must be between 0 and 36");
-			int secondNumber = readInt("Enter number between 0 and 36");
+			println("Number must be between 0 and 36!");
+			int secondNumber = readInt("Enter number between 0 and 36: ");
 			number = secondNumber;
 		}
 		int betMoney = readInt("How much would you like to bet? ");
@@ -37,11 +37,11 @@ public class Problem38 extends ConsoleProgram {
 		if (luckyNumber == number) {
 			println("Congrats, you win. The lucky number was " + luckyNumber + " and you guessed it!");
 			money += betMoney;
-			println("Your current money is " + money);
+			println("Your current money is " + money + ".");
 		} else {
-			println("Unfortunately, You lost. The lucky number was " + luckyNumber + " and you picked " + number);
+			println("Unfortunately, You lost. The lucky number was " + luckyNumber + " and you picked " + number + ".");
 			money -= betMoney;
-			println("Your current money is " + money);
+			println("Your current money is " + money + ".");
 		}
 		if(money == 0){
 			println("You don't have any money left! :(");
