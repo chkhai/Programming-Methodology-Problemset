@@ -17,6 +17,8 @@ public class Problem31 extends ConsoleProgram{
 		}
 		if(count > 2){
 			return false;
+		}else{
+			return true;
 		}
 	}	
 
