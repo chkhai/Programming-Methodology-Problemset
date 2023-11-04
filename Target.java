@@ -1,3 +1,4 @@
+
 /*
  * File: Target.java
  * Name: 
@@ -21,8 +22,10 @@ public class Target extends GraphicsProgram {
 		drawSecondCircle();
 		drawThirdCircle();
 	}
-	
-	/* This method creates the smallest circle, fills it and colors it red.
+
+	/*
+	 * This method creates the smallest circle. The coordinates of the circle is
+	 * x and y. After creating circle, it paints it red.
 	 */
 	private void drawThirdCircle() {
 		double x = getWidth() / 2 - SMALL_RADIUS;
@@ -32,8 +35,10 @@ public class Target extends GraphicsProgram {
 		thirdCircle.setColor(Color.RED);
 		add(thirdCircle);
 	}
-	
+
 	/*
+	 * This method creates the middle circle. The coordinates of the circle is
+	 * x and y. After creating circle, it paints it white.
 	 */
 	private void drawSecondCircle() {
 		double x = getWidth() / 2 - MIDDLE_RADIUS;
@@ -45,13 +50,13 @@ public class Target extends GraphicsProgram {
 	}
 
 	/*
-	 * 
+	 * This method creates the biggest circle. The coordinates of the circle is
+	 * x and y. After creating circle, it paints it red.
 	 */
 	private void drawFirstCircle() {
 		double x = getWidth() / 2 - BIG_RADIUS;
-		double y = getHeight() / 2 -BIG_RADIUS;
-		GOval firstCircle = new GOval(x, y, 2 * BIG_RADIUS,
-				2 * BIG_RADIUS);
+		double y = getHeight() / 2 - BIG_RADIUS;
+		GOval firstCircle = new GOval(x, y, 2 * BIG_RADIUS, 2 * BIG_RADIUS);
 		firstCircle.setFilled(true);
 		firstCircle.setColor(Color.RED);
 		add(firstCircle);
