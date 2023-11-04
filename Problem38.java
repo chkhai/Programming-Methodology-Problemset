@@ -16,7 +16,7 @@ public class Problem38 extends ConsoleProgram {
 	public void run() {
 		while (true) {
 			int money = 1000;
-			playTheGame(money);
+			money = playTheGame(money);
 			if(money == 0){
 				break;
 			}
