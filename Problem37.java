@@ -20,6 +20,6 @@ public class Problem37 extends ConsoleProgram{
 		} else {
 			println("you lose!");
 		}
-		
+		println("The lucky number was " + luckyNumber);
 	}
 }
