@@ -1,3 +1,11 @@
+/*
+ * File: Target.java
+ * Name: 
+ * Section Leader: 
+ * -----------------
+ * This file is the starter file for the Target problem.
+ */
+
 import java.awt.Color;
 
 import acm.graphics.*;
