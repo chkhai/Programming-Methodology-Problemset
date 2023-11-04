@@ -75,6 +75,7 @@ public class ProgramHierarchy extends GraphicsProgram {
 		add(label, m, n);
 
 	}
+	
 	/*
 	 * This method helps us draw "GraphicsProgram" rectangle. x and y are coordinates
 	 * of the rectangle. After drawing rectangle, method draws label in the center of
@@ -90,7 +91,11 @@ public class ProgramHierarchy extends GraphicsProgram {
 		double n = y + RECT_HEIGHT / 2 + label.getAscent() / 2;
 		add(label, m, n);
 	}
-
+	/*
+	 * This method helps us draw "ConsoleProgram" rectangle. x and y are coordinates
+	 * of the rectangle. After drawing rectangle, method draws label in the center of
+	 * the rectangle.
+	 */
 	private void drawConsoleProgramRectAndLabel() {
 		double x = getWidth() / 2 - RECT_WIDTH / 2;
 		double y = getHeight() / 2;
