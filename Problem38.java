@@ -36,11 +36,11 @@ public class Problem38 extends ConsoleProgram {
 		int luckyNumber = rgen.nextInt(0, 36);
 		if (luckyNumber == number) {
 			println("Congrats, you win. The lucky number was " + luckyNumber + " and you guessed it!");
-			money += betMoney;
+			money = money + betMoney;
 			println("Your current money is " + money + ".");
 		} else {
 			println("Unfortunately, You lost. The lucky number was " + luckyNumber + " and you picked " + number + ".");
-			money -= betMoney;
+			money = money - betMoney;
 			println("Your current money is " + money + ".");
 		}
 		if(money == 0){
