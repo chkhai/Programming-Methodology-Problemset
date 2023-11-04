@@ -19,7 +19,7 @@ public class meekvseAmocana extends ConsoleProgram {
 				break;
 			}
 		} */
-		FromNtoOne(n, count);
+		count = FromNtoOne(n, count);
 		print("The process took " + count + " to reach 1.");
 	}
 
