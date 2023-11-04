@@ -18,6 +18,13 @@ public class Hailstone extends ConsoleProgram {
 		print("The process took " + count + " to reach 1.");
 	}
 
+	/*
+	 * This method helps us to reach one from n. If n is odd, we multiply it by
+	 * three and add one. The new n is 3*n+1. If n is even, we divide it by two
+	 * and new n is n/2. In both cases count increases by one. When n becomes
+	 * one, the method stops.
+	 * 
+	 */
 	private int FromNtoOne(int n, int count) {
 		while (true) {
 			if (n % 2 == 0) {
