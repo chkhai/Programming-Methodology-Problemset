@@ -5,22 +5,20 @@ public class Problem31 extends ConsoleProgram{
 	public void run(){
 		double n = readInt("Enter integer: ");
 		double count = 0;
-		checkPrime(n, count);
-		if(count == 2){
-			println(n + " is prime number.");
-		} else {
-			println(n + " is not prime number.");
+		if(isPrime(n,count)){
+			}
 		}
-	}
 
-	private double checkPrime(double n, double count) {
-		for(double i = 1; i < n; i++){
-			if(n % i == 0){
+	private boolean isPrime(double n, double count) {
+		for(int i = 1; i < n; i++){
+			if(n % i ==0){
 				count++;
 			}
 		}
-		return count;
-	}
+		if(count > 2){
+			return false;
+		}
+	}	
 
 
 }
