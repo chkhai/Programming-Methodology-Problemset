@@ -1,6 +1,6 @@
 import acm.program.ConsoleProgram;
 
-public class meotxeAmocana extends ConsoleProgram {
+public class PythagoreanTheorem extends ConsoleProgram {
 
 	public void run() {
 		int a = readInt("Enter integer: ");
