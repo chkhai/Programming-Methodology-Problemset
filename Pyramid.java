@@ -32,10 +32,11 @@ public class Pyramid extends GraphicsProgram {
 	}
 
 	/*
-	 * This method helps us build horizontal row of bricks. x and y are the coordinates
-	 * of the first brick in the row. After creating the first brick, x coordinate increases by
-	 * BRICK_WIDTH, y coordinate stays the same since its the same row. In one row we have to 
-	 * build BRICKS_IN_BASE-i+1 bricks.
+	 * This method helps us build horizontal row of bricks. x and y are the
+	 * coordinates of the first brick in the row. After creating the first
+	 * brick, x coordinate increases by BRICK_WIDTH, y coordinate stays the same
+	 * since its the same row. In one row we have to build BRICKS_IN_BASE-i+1
+	 * bricks.
 	 */
 	private void makeHorizontalRowOfBricks(int i) {
 		double x = getWidth() / 2 - BRICK_WIDTH * (BRICKS_IN_BASE - i) / 2;
