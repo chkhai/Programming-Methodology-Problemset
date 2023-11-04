@@ -1,3 +1,11 @@
+/*
+ * File: PythagoreanTheorem.java
+ * Name: 
+ * Section Leader: 
+ * -----------------------------
+ * This file is the starter file for the PythagoreanTheorem problem.
+ */
+
 import acm.program.ConsoleProgram;
 
 public class PythagoreanTheorem extends ConsoleProgram {
@@ -8,7 +16,10 @@ public class PythagoreanTheorem extends ConsoleProgram {
 		double c = calculatePythagoreanTheorem(a, b);
 		println(c);
 	}
-
+	/*
+	 * This method helps us compute pythagoreanTheorem. Firstly it calculates the sum
+	 * of a^2 and b^2 and then it takes square root of it.
+	 */
 	private double calculatePythagoreanTheorem(int a, int b) {
 		double y = Math.sqrt(a * a + b * b);
 		return y;
