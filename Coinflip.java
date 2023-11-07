@@ -12,6 +12,7 @@ public class Coinflip extends GraphicsProgram {
 
 	public void run() {
 		GOval circle1 = drawCircle(Color.red);
+		GOval circle2 = drawCircle(Color.green);
 	}
 
 	private GOval drawCircle(Color red) {
