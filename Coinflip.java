@@ -1,3 +1,6 @@
+import java.awt.Color;
+
+import acm.graphics.*;
 import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
 //გრაფიკულ პროგრამაში გააკეთეთ მონეტის აგდების სიმულაციის თამაში.
@@ -7,6 +10,14 @@ public class Coinflip extends GraphicsProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private static final int PAUSE_TIME = 10;
 	public void run() {
-		
+		drawCircle(Color.red);
+		drawCircle(Color.green);
 	}
+	private void drawCircle(Color color) {
+		GOval circle = new GOval(getWidth() / 2 - 40, getHeight() / 2 - 40, 80, 80);
+		circle.setFilled(true);
+		circle.setColor(color);
+		add(circle);
+	}
+	
 }
