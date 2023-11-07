@@ -5,7 +5,7 @@ import acm.program.GraphicsProgram;
 
 public class Problem40 extends GraphicsProgram {
 	private static final int RADIUS = 25;
-
+	private static final int PAUSE_TIME = 5;
 	public void run() {
 		GOval circle = new GOval(0, getHeight() / 2 - RADIUS, 2 * RADIUS, 2 * RADIUS);
 		circle.setFilled(true);
@@ -18,11 +18,11 @@ public class Problem40 extends GraphicsProgram {
 		while (true) {
 			while (circle.getX() != getWidth() - 2 * RADIUS) {
 				circle.move(1, 0);
-				pause(5);
+				pause(PAUSE_TIME);
 			}
 			while (circle.getX() != 0){
 				circle.move(-1, 0);
-				pause(5);
+				pause(PAUSE_TIME);
 			}
 		}
 	}
