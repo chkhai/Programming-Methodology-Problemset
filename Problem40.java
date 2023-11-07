@@ -26,6 +26,4 @@ public class Problem40 extends GraphicsProgram {
 			}
 		}
 	}
-	
-	
 }
