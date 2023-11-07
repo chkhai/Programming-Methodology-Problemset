@@ -19,6 +19,6 @@ public class Coinflip extends GraphicsProgram {
 		circle2.setFilled(true);
 		circle2.setColor(Color.green);
 		add(circle2);
-		
+		circle1.setVisible(false);
 	}
 }
