@@ -11,10 +11,10 @@ public class Problem40 extends GraphicsProgram {
 		circle.setFilled(true);
 		circle.setColor(Color.red);
 		add(circle);
-		smashToVerticalWalls();
+		smashToVerticalWalls(circle);
 	}
-	
-	private void smashToVerticalWalls(){
+
+	private void smashToVerticalWalls(GOval circle) {
 		while (true) {
 			while (circle.getX() != getWidth() - 2 * RADIUS) {
 				circle.move(1, 0);
@@ -26,4 +26,6 @@ public class Problem40 extends GraphicsProgram {
 			}
 		}
 	}
+	
+	
 }
