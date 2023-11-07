@@ -14,7 +14,7 @@ public class Coinflip extends GraphicsProgram {
 		drawCircle(Color.green);
 	}
 	private void drawCircle(Color color) {
-		GOval circle = new GOval(getWidth() / 2 - 40, getHeight() / 2 - 40, 80, 80);
+		GOval circle = new GOval(getWidth() / 2 - 100, getHeight() / 2 - 100, 200, 200);
 		circle.setFilled(true);
 		circle.setColor(color);
 		add(circle);
