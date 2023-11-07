@@ -11,6 +11,10 @@ public class Problem40 extends GraphicsProgram {
 		circle.setFilled(true);
 		circle.setColor(Color.red);
 		add(circle);
+		smashToVerticalWalls();
+	}
+	
+	private void smashToVerticalWalls(){
 		while (true) {
 			while (circle.getX() != getWidth() - 2 * RADIUS) {
 				circle.move(1, 0);
