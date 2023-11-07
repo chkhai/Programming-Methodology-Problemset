@@ -16,7 +16,9 @@ public class Problem39 extends GraphicsProgram {
 		circle.setColor(Color.red);
 		add(circle);
 		while(circle.getX() != getWidth() / 2 - RADIUS){
-			circle.move(1, 0);
+			double dx = 1;
+			double dy = 0;
+			circle.move(dx, dy);
 			pause(5);
 		}
 	}
