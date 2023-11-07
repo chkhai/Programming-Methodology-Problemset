@@ -10,6 +10,7 @@ public class Problem39 extends GraphicsProgram {
 		GOval circle = new GOval(0, getHeight() / 2 - RADIUS, 2 * RADIUS, 2 * RADIUS);
 		circle.setFilled(true);
 		circle.setColor(Color.red);
+		add(circle);
 		while(circle.getX() != getWidth() / 2 - RADIUS){
 			move(1,0);
 			pause(10);
