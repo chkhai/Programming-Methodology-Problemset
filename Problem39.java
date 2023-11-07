@@ -5,7 +5,7 @@ import acm.program.GraphicsProgram;
 
 public class Problem39 extends GraphicsProgram {
 	private static final int RADIUS = 25;
-
+	private static final int PAUSE_TIME = 5;
 	public void run() {
 		ballFloat();
 	}
@@ -19,7 +19,7 @@ public class Problem39 extends GraphicsProgram {
 			double dx = 1;
 			double dy = 0;
 			circle.move(dx, dy);
-			pause(5);
+			pause(PAUSE_TIME);
 		}
 	}
 }
