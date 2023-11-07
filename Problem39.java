@@ -7,6 +7,10 @@ public class Problem39 extends GraphicsProgram {
 	private static final int RADIUS = 25;
 
 	public void run() {
+		ballFloat();
+	}
+	
+	private void ballFloat(){
 		GOval circle = new GOval(0, getHeight() / 2 - RADIUS, 2 * RADIUS, 2 * RADIUS);
 		circle.setFilled(true);
 		circle.setColor(Color.red);
