@@ -11,18 +11,14 @@ public class Coinflip extends GraphicsProgram {
 	private static final int PAUSE_TIME = 10;
 
 	public void run() {
-		drawCircle(Color.red);
-		drawCircle(Color.green);
-		waitForClick();
+		GOval circle1 = new GOval(getWidth() / 2 - 100, getHeight() / 2 - 100, 200, 200);
+		circle1.setFilled(true);
+		circle1.setColor(Color.red);
+		add(circle1);
+		GOval circle2 = new GOval(getWidth() / 2 - 100, getHeight() / 2 - 100, 200, 200);
+		circle2.setFilled(true);
+		circle2.setColor(Color.green);
+		add(circle2);
 		
-
 	}
-
-	private void drawCircle(Color color) {
-		GOval circle = new GOval(getWidth() / 2 - 100, getHeight() / 2 - 100, 200, 200);
-		circle.setFilled(true);
-		circle.setColor(color);
-		add(circle);
-	}
-
 }
