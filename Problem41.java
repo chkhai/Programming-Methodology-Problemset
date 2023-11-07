@@ -13,7 +13,7 @@ public class Problem41 extends GraphicsProgram{
 		circle.setColor(Color.pink);
 		while(true){
 			waitForClick();
-			double x = 
+
 		}
 	}
 }
