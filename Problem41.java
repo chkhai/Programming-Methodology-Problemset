@@ -8,8 +8,9 @@ import acm.program.GraphicsProgram;
 //ეკრანზე დაამატეთ გაფერადებული წრეწირები იმავე წერტილში სადაც მაუსი მდებარეობს.
 public class Problem41 extends GraphicsProgram{
 	private static final int RADIUS = 25;
-	private GOval circle = new GOval(2 * RADIUS, 2 * RADIUS);
+	private GOval circle;
 	public void run() {
+		circle = new GOval(2 * RADIUS, 2 * RADIUS);
 		circle.setFilled(true);
 		circle.setColor(Color.pink);
 		addMouseListeners();
