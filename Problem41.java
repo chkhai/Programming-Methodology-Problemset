@@ -10,7 +10,6 @@ public class Problem41 extends GraphicsProgram{
 	private static final int RADIUS = 25;
 	private GOval circle = new GOval(2 * RADIUS, 2 * RADIUS);
 	public void run() {
-		GOval circle = new GOval(2 * RADIUS, 2 * RADIUS);
 		circle.setFilled(true);
 		circle.setColor(Color.pink);
 		addMouseListeners();
