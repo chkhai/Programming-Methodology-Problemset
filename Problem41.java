@@ -16,7 +16,7 @@ public class Problem41 extends GraphicsProgram{
 	}
 	
 	public void mouseMoved(MouseEvent e){
-		add(circle, e.getX(), e.getY());
+		add(circle, e.getX() - RADIUS, e.getY() - RADIUS);
 	}
 	
 }
