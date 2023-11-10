@@ -57,6 +57,8 @@ public class Test extends GraphicsProgram {
 	/** Number of turns */
 	private static final int NTURNS = 3;
 
+	private static final int PAUSE_TIME = 5;
+	
 	private GOval BALL;
 	
 	private GRect PADDLE;
@@ -84,8 +86,9 @@ public class Test extends GraphicsProgram {
 		if(rgen.nextBoolean()){
 			vx=-vx;
 		}
-		while(true){
+		while(BALL.getY() <= BRICK.getY() && BALL.getX() >= 0 && BALL.getX() <= WIDTH){
 			BALL.move(vx, vy);
+			pause(PAUSE_TIME);
 		}
 	}
 
