@@ -89,10 +89,10 @@ public class Test extends GraphicsProgram {
 		while(true){
 			BALL.move(vx, vy);
 			pause(PAUSE_TIME);
-			if(BALL.getX() == 0 || BALL.getY() == getHeight() - 2 * BALL_RADIUS){
+			while(BALL.getX() == 0 || BALL.getY() == getHeight() - 2 * BALL_RADIUS){
 				vy = -vy;
 			}
-			if(BALL.getY() == 0 || BALL.getX() == getWidth() - 2 * BALL_RADIUS){
+			while(BALL.getY() == 0 || BALL.getX() == getWidth() - 2 * BALL_RADIUS){
 				vx = -vx;
 			}
 		}
