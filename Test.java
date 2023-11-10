@@ -78,7 +78,7 @@ public class Test extends GraphicsProgram {
 	}
 
 	private void playTheGame() {
-		waitForClick();
+	//	waitForClick();
 		vy = 3;
 		vx = rgen.nextDouble(1.0 , 3.0);
 		if(rgen.nextBoolean()){
