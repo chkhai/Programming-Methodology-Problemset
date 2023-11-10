@@ -86,7 +86,7 @@ public class Test extends GraphicsProgram {
 		if(rgen.nextBoolean()){
 			vx=-vx;
 		}
-		while(true){
+		while(BALL.getX() != WIDTH && BALL.getY() != HEIGHT){
 			BALL.move(vx, vy);
 			pause(PAUSE_TIME);
 		}
