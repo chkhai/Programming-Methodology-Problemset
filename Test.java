@@ -107,7 +107,7 @@ public class Test extends GraphicsProgram {
 	private void createPaddle() {
 		PADDLE = new GRect(PADDLE_WIDTH, PADDLE_HEIGHT);
 		PADDLE.setFilled(true);
-		add(PADDLE, WIDTH / 2 - PADDLE_WIDTH / 2, HEIGHT - PADDLE_HEIGHT - PADDLE_Y_OFFSET);
+		PADDLE.setLocation(WIDTH / 2 - PADDLE_WIDTH / 2, HEIGHT - PADDLE_HEIGHT - PADDLE_Y_OFFSET);
 	}
 
 	private void createBall() {
