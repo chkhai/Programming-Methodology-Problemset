@@ -1,6 +1,6 @@
 import acm.program.ConsoleProgram;
 
-public class StringSample extends ConsoleProgram{
+public class Problem45 extends ConsoleProgram{
 	public void run() {
 		String str1 = "mari";
 		String str2 = "mari";
