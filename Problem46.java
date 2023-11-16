@@ -5,10 +5,15 @@ public class Problem46 extends ConsoleProgram{
 	
 	public void run(){
 		String word = readLine("Enter word: ");
-		for(int i = 0; i < word.length(); i++){
-			for(int j = 0; j < word.length(); j++){
-				
-			}
+		
 		}
-	}
+	
+//	private int num(String word, char symb){
+//		int num = 0 ;
+//		for(int i = 0; i < word.length(); i++){
+//			if(word.charAt(i)==symb.charAt(0)){
+//				num++;
+//			}
+//		}
+//	}
 }
