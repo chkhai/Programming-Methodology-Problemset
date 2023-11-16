@@ -7,7 +7,7 @@ public class Problem45 extends ConsoleProgram{
 		String symb = readLine("Enter symbol: ");
 		int count = 0;
 		for(int i = 0; i < word.length(); i++){
-			if(word.charAt(i)==symb.charAt(1)){
+			if(word.charAt(i)==symb.charAt(0)){
 				count++;
 			}
 		}
