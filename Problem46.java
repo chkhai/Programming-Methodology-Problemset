@@ -6,7 +6,9 @@ public class Problem46 extends ConsoleProgram{
 	public void run(){
 		String word = readLine("Enter word: ");
 		for(int i = 0; i < word.length(); i++){
-			
+			for(int j = 0; j < word.length(); j++){
+				
+			}
 		}
 	}
 }
