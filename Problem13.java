@@ -1,23 +1,10 @@
 import acm.graphics.GLine;
 import acm.program.GraphicsProgram;
 
-public class Problem13 extends GraphicsProgram{
-	/*
-	 * File: Pyramid.java
-	 * Name: Luka Chkhaidze
-	 * Section Leader: Giorgi Tkeshelashvili
-	 * ------------------
-	 * This file is the starter file for the Pyramid problem.
-	 * It includes definitions of the constants that match the
-	 * sample run in the assignment, but you should make sure
-	 * that changing these values causes the generated display
-	 * to change accordingly.
-	 */
-
 	import acm.graphics.*;
 	import acm.program.GraphicsProgram;
 
-	public class Pyramid extends GraphicsProgram {
+	public class Problem13 extends GraphicsProgram {
 
 		/** Width of each bricks in pixels */
 		private static final int BRICK_WIDTH = 30;
