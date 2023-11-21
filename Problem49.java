@@ -4,6 +4,7 @@ public class Problem49 extends ConsoleProgram{
 	public void run(){
 		String str = "3456";
 		int num = stringToInteger(str);
+		println(num);
 	}
 
 	private int stringToInteger(String str) {
