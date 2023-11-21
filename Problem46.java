@@ -5,15 +5,18 @@ public class Problem46 extends ConsoleProgram{
 	
 	public void run(){
 		String word = readLine("Enter word: ");
-		
+		boolean palindrom = isPalindrom(word);
+		if(palindrom){
+			println(word + "is palindrom");
 		}
-	
-//	private int num(String word, char symb){
-//		int num = 0 ;
-//		for(int i = 0; i < word.length(); i++){
-//			if(word.charAt(i)==symb.charAt(0)){
-//				num++;
-//			}
-//		}
-//	}
+		}
+
+	private boolean isPalindrom(String word) {
+		for(int i = 0; i < word.length(); i++){
+			if(word.charAt(i)==word.charAt(word.length() - 1)){
+				return true;
+			}
+		}
+		return false;
+	}
 }
