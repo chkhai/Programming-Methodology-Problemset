@@ -7,7 +7,7 @@ public class Problem46 extends ConsoleProgram{
 		String word = readLine("Enter word: ");
 		boolean palindrom = isPalindrom(word);
 		if(palindrom){
-			println(word + "is palindrom");
+			println(word + " is palindrom");
 		}
 		}
 
