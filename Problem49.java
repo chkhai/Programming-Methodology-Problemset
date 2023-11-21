@@ -11,8 +11,8 @@ public class Problem49 extends ConsoleProgram{
 		for(int i = 0; i < str.length(); i++){
 			char currCh = str.charAt(i);
 			int currDigit = currCh - '0';
-			return currDigit;
+			num = num * 10 + currDigit;
 		}
-		return 0;
+		return num;
 	}
 }
