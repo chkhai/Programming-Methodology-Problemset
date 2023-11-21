@@ -13,10 +13,10 @@ public class Problem46 extends ConsoleProgram{
 
 	private boolean isPalindrom(String word) {
 		for(int i = 0; i < word.length(); i++){
-			if(word.charAt(i)==word.charAt(word.length() - 1)){
-				return true;
+			if(word.charAt(i)!=word.charAt(word.length() - 1)){
+				return false;
 			}
 		}
-		return false;
+		return true;
 	}
 }
