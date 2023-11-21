@@ -9,7 +9,7 @@ public class Problem46 extends ConsoleProgram{
 			if(palindrom){
 				println(word + " is palindrom.");
 			} else {
-				println(word + " is not palindrom.")
+				println(word + " is not palindrom.");
 			}
 		}
 
