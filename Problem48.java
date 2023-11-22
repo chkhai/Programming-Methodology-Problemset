@@ -7,4 +7,14 @@ public class Problem48 extends ConsoleProgram{
 		String input = readLine("Enter a word: ");
 		keepTheTrackOfSymbols(input);
 	}
+
+	private void keepTheTrackOfSymbols(String input) {
+		for(int i = 0; i < input.length(); i++) {
+			char currCh = input.charAt(i);
+			if(charWasInSentence(currCh)){
+				
+			}
+		}
+		
+	}
 }
