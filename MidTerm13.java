@@ -23,8 +23,15 @@ public class MidTerm13 extends ConsoleProgram{
 	
 	private boolean spellWord(String main, String second){
 		for(int i = 0; i < second.length()-1; i++){
-			main = main + -second.charAt(i);
+			checkIfThereAreSameLetters(second);
 		}
 		return false;
+	}
+
+	private void checkIfThereAreSameLetters(String second) {
+		int count = 0;
+		for(int i = 0; i < second.length()-1; i++){
+
+		}
 	}
 }
