@@ -1,19 +1,25 @@
+import java.awt.Color;
+
 import acm.graphics.*;
-import acm.program.ConsoleProgram;
-public class Coinflip extends ConsoleProgram{
-public void run(){
-int x = 1;
-int y = 2;
-GObject o = new GRect(x,y);
-String s = "shalaxo";
-println(iseRa(x,y,o,s));
-println(iseRa(x,y,o,s));
-}
-private int iseRa(int x, double y, GObject r, String s){
-x++;
-y += 1;
-r.move(x,y);
-s = s.substring(s.indexOf('a'));
-return (int)(x + y + r.getX() + s.length());
-}
+import acm.program.GraphicsProgram;
+import acm.util.RandomGenerator;
+//გრაფიკულ პროგრამაში გააკეთეთ მონეტის აგდების სიმულაციის თამაში.
+//მონეტა არის წრე, რომელსაც ერთი მხარე აქვს წითელი და აწერია heads, მეორე მხარე აქვს მწვანე და აწერია tails.
+
+public class Coinflip extends GraphicsProgram {
+	private RandomGenerator rgen = RandomGenerator.getInstance();
+	private static final int PAUSE_TIME = 10;
+
+	public void run() {
+		GOval circle1 = drawCircle(Color.red);
+		GOval circle2 = drawCircle(Color.green);
+	}
+
+	private GOval drawCircle(Color red) {
+		GOval circle1 = new GOval(getWidth() / 2 - 100, getHeight() / 2 - 100, 200, 200);
+		circle1.setFilled(true);
+		circle1.setColor(Color.red);
+		add(circle1);
+		return circle1;
+	}
 }
