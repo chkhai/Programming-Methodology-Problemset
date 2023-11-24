@@ -8,7 +8,7 @@ public class MidTerm12 extends ConsoleProgram{
 	public void run() {
 		int a = readInt("Enter natural number: ");
 		int BiggestDivisor = 1;
-		for(int i = 1; i < a; i++){
+		for(int i = 1; i < a + 1; i++){
 			if(a % i == 0 && isPrime(i)){
 				BiggestDivisor = i;
 			}
