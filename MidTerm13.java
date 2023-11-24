@@ -22,13 +22,8 @@ public class MidTerm13 extends ConsoleProgram{
 	}
 	
 	private boolean spellWord(String main, String second){
-		for(int i = 0; i < main.length()-1; i++){
-			for(int j = 0; j < second.length()-1; j++){
-				if(second.charAt(j) == main.charAt(i)){
-					return true;
-				}
-			}
-		
+		for(int i = 0; i < second.length()-1; i++){
+			main = main + -second.charAt(i);
 		}
 		return false;
 	}
