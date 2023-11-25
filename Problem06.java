@@ -35,4 +35,3 @@ public class Problem06 extends SuperKarel {
 	
 
 
-
