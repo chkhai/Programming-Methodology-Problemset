@@ -16,7 +16,7 @@ public class Problem48 extends ConsoleProgram{
 				int count = 0;
 				if(ch==chc){
 					count++;
-					println(ch " is " + count + " times");
+					println(ch + count + " times");
 				}
 			}
 		}
