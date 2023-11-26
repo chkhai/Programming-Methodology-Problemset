@@ -11,6 +11,8 @@ import acm.program.ConsoleProgram;
 public class DNAProblem extends ConsoleProgram {
 
 	private int length;
+	
+	private int count;
 
 	public void run() {
 		String anakin = readLine("Enter Anakin's DNA: ");
@@ -41,7 +43,7 @@ public class DNAProblem extends ConsoleProgram {
 
 	private int checkTheLengthOfSamePart(String anakin, String luke, char ch, char chch, int i, int j) {
 		System.out.println("true");
-		int count = 1;
+		count = 1;
 		while(ch==chch){
 			count++;
 			ch = anakin.charAt(i + 1);
