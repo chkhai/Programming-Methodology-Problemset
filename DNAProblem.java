@@ -8,46 +8,45 @@ import acm.program.ConsoleProgram;
 //აბრუნებს boolean-ს.ანუ თქვენ უნდა იპოვოთ ორ სტრინგში მაქსიმალური სიგრძის
 //ქვესტრინგი, რომელსაც ორივე სტრინგი შეიცავს. მაგალითად:
 
-public class DNAProblem extends ConsoleProgram{
-	
+public class DNAProblem extends ConsoleProgram {
+
 	private int length;
-	
+
 	public void run() {
 		String anakin = readLine("Enter Anakin's DNA: ");
 		String luke = readLine("Enter Luke's DNA: ");
-		if(amIYourFatherLuke(anakin, luke)){
+		if (amIYourFatherLuke(anakin, luke)) {
 			println("Anakin is Luke's father.");
-		}else{
+		} else {
 			println("Anakin isn't Luke's father.");
 		}
 	}
-	
+
 	private boolean amIYourFatherLuke(String anakin, String luke) {
-		for(int i = 0; i < anakin.length() - 1; i++){
+		for (int i = 0; i < anakin.length() - 1; i++) {
 			char ch = anakin.charAt(i);
-			for(int j = 0; j < luke.length() - 1; j++) {
+			for (int j = 0; j < luke.length() - 1; j++) {
 				char chch = luke.charAt(j);
-				if(ch == chch){
+				if (ch == chch) {
 					length = checkTheLengthOfSamePart(anakin, luke, ch, chch, i, j);
-					if(length > anakin.length() / 2) {
+					if (length > anakin.length() / 2) {
 						return true;
 					}
 				}
 			}
 		}
 		return false;
-		
-		
+
 	}
-	
+
 	private int checkTheLengthOfSamePart(String anakin, String luke, char ch, char chch, int i, int j) {
 		int count = 1;
-		while(anakin.substring(i, i+1).equals(luke.substring(j, j +1 ))){
+		while (anakin.substring(i, i + 1).equals(luke.substring(j, j + 1))) {
 			count++;
-			ch = anakin.charAt(i+1);
-			chch = luke.charAt(j+1);
+			ch = anakin.charAt(i + 1);
+			chch = luke.charAt(j + 1);
 		}
 		return count;
 	}
-	
+
 }
