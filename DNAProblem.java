@@ -23,13 +23,14 @@ public class DNAProblem extends ConsoleProgram {
 	}
 
 	private boolean amIYourFatherLuke(String anakin, String luke) {
-		System.out.println("true");
+//		System.out.println("true");
 		for (int i = 0; i < anakin.length() - 1; i++) {
 			char ch = anakin.charAt(i);
 			for (int j = 0; j < luke.length() - 1; j++) {
 				char chch = luke.charAt(j);
 				if (ch == chch) {
 					length = checkTheLengthOfSamePart(anakin, luke, ch, chch, i, j);
+					System.out.println("true");
 					if (length > (anakin.length() / 2)) {
 						return true;
 					}
