@@ -11,7 +11,7 @@ public class LogarithmProblem extends ConsoleProgram{
 
 	private int log(int m, int n) {
 		int multiply = 1;
-		int count = 1;
+		int count = 0;
 		while(multiply < n){
 			multiply = multiply * m;
 			count++;
