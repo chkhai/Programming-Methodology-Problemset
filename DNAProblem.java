@@ -48,12 +48,11 @@ public class DNAProblem extends ConsoleProgram {
 	private int checkTheLengthOfSamePart(String anakin, String luke, char ch, char chch, int i, int j) {
 		System.out.println("true");
 		count = 1;
-		while(ch==chch){
-			System.out.println("true");
-			ch = anakin.charAt(i + 1);
-			chch = luke.charAt(j + 1);
-			count++;
-
+		for(int m = i; m < anakin.length()-1; i++){
+			if(anakin.charAt(i) == luke.charAt(j)){
+				count++;
+				j++;
+			}
 		}
 		return count;
 	}
