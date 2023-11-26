@@ -33,7 +33,7 @@ public class DNAProblem extends ConsoleProgram {
 				if (ch == chch) {
 					System.out.println("true");
 					length = checkTheLengthOfSamePart(anakin, luke, ch, chch, i, j);
-//					System.out.println("true");
+					System.out.println("true");
 					if (length > (anakin.length() / 2)) {
 						return true;
 					}
