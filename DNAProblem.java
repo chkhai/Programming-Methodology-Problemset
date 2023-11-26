@@ -29,11 +29,11 @@ public class DNAProblem extends ConsoleProgram{
 				char chch = luke.charAt(j);
 				if(ch == chch){
 					length = checkTheLengthOfSamePart(anakin, luke, ch, chch, i, j);
+					if(length > anakin.length() / 2) {
+						return true;
+					}
 				}
 			}
-		}
-		if(length > anakin.length() / 2) {
-			return true;
 		}
 		return false;
 		
