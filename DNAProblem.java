@@ -46,9 +46,9 @@ public class DNAProblem extends ConsoleProgram {
 		count = 1;
 		while(ch==chch){
 			System.out.println("true");
-			count++;
 			ch = anakin.charAt(i + 1);
 			chch = luke.charAt(j + 1);
+			count++;
 
 		}
 		return count;
