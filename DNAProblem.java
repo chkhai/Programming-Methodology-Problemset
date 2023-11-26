@@ -49,7 +49,7 @@ public class DNAProblem extends ConsoleProgram {
 		System.out.println("true");
 		count = 1;
 		for(int m = 0; m < anakin.length()-i-1; i++){
-			if(anakin.charAt(m) == luke.charAt(j)){
+			if(anakin.substring(i).charAt(m) == luke.charAt(j)){
 				count++;
 				j++;
 			}
