@@ -20,10 +20,10 @@ public class DNAProblem extends ConsoleProgram {
 		} else {
 			println("Anakin isn't Luke's father.");
 		}
-		println("deda");
 	}
 
 	private boolean amIYourFatherLuke(String anakin, String luke) {
+		System.out.prinln("true");
 		for (int i = 0; i < anakin.length() - 1; i++) {
 			char ch = anakin.charAt(i);
 			for (int j = 0; j < luke.length() - 1; j++) {
