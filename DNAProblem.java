@@ -28,6 +28,7 @@ public class DNAProblem extends ConsoleProgram {
 			char ch = anakin.charAt(i);
 			System.out.println("true");
 			for (int j = 0; j < luke.length() - 1; j++) {
+				System.out.println("true");
 				char chch = luke.charAt(j);
 				if (ch == chch) {
 					length = checkTheLengthOfSamePart(anakin, luke, ch, chch, i, j);
