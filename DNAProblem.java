@@ -23,17 +23,12 @@ public class DNAProblem extends ConsoleProgram {
 	}
 
 	private boolean amIYourFatherLuke(String anakin, String luke) {
-//		System.out.println("true");
 		for (int i = 0; i < anakin.length() - 1; i++) {
 			char ch = anakin.charAt(i);
-			System.out.println("true");
 			for (int j = 0; j < luke.length() - 1; j++) {
-				System.out.println("true");
 				char chch = luke.charAt(j);
 				if (ch == chch) {
-					System.out.println("true");
 					length = checkTheLengthOfSamePart(anakin, luke, ch, chch, i, j);
-					System.out.println("true");
 					if (length > (anakin.length() / 2)) {
 						return true;
 					}
@@ -45,6 +40,7 @@ public class DNAProblem extends ConsoleProgram {
 	}
 
 	private int checkTheLengthOfSamePart(String anakin, String luke, char ch, char chch, int i, int j) {
+		System.out.println("true");
 		int count = 0;
 		while (ch==chch) {
 			count++;
