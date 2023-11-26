@@ -11,6 +11,8 @@ import acm.program.ConsoleProgram;
 public class DNAProblem extends ConsoleProgram{
 	
 	private int length;
+	char ch;
+	char chch;
 	
 	public void run() {
 		String anakin = readLine("Enter Anakin's DNA: ");
@@ -24,9 +26,9 @@ public class DNAProblem extends ConsoleProgram{
 	
 	private boolean amIYourFatherLuke(String anakin, String luke) {
 		for(int i = 0; i < anakin.length() - 1; i++){
-			char ch = anakin.charAt(i);
+			ch = anakin.charAt(i);
 			for(int j = 0; j < luke.length() - 1; j++) {
-				char chch = luke.charAt(j);
+				chch = luke.charAt(j);
 				if(ch == chch){
 					length = checkTheLengthOfSamePart(anakin, luke, ch, chch, i, j);
 					if(length > anakin.length() / 2) {
