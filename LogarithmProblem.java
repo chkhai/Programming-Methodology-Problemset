@@ -3,14 +3,19 @@ import acm.program.ConsoleProgram;
 public class LogarithmProblem extends ConsoleProgram{
 	
 	public void run() {
-		double m = readDouble("Enter natural number:");
-		double n = readDouble("Enter natural number:");
+		int m = readInt("Enter natural number:");
+		int n = readInt("Enter natural number:");
 		int k = log(m, n);
 		println(k);
 	}
 
-	private int log(double m, double n) {
-		
-		return 0;
+	private int log(int m, int n) {
+		int multiply = 1;
+		int count = 1;
+		while(multiply < n){
+			multiply = multiply * m;
+			count++;
+		}
+		return count;
 	}
 }
