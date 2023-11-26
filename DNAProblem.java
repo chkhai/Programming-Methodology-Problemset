@@ -41,8 +41,7 @@ public class DNAProblem extends ConsoleProgram {
 
 	private int checkTheLengthOfSamePart(String anakin, String luke, char ch, char chch, int i, int j) {
 		int count = 0;
-		while (anakin.substring(anakin.indexOf(ch), anakin.indexOf(ch) + 1)
-				.equals(luke.substring(luke.indexOf(chch), luke.indexOf(chch) + 1))) {
+		while (ch==chch) {
 			count++;
 			ch = anakin.charAt(i + 1);
 			chch = luke.charAt(j + 1);
