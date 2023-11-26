@@ -23,7 +23,7 @@ public class DNAProblem extends ConsoleProgram {
 	}
 
 	private boolean amIYourFatherLuke(String anakin, String luke) {
-		System.out.prinln("true");
+		System.out.println("true");
 		for (int i = 0; i < anakin.length() - 1; i++) {
 			char ch = anakin.charAt(i);
 			for (int j = 0; j < luke.length() - 1; j++) {
