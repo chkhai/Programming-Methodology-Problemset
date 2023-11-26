@@ -9,6 +9,9 @@ import acm.program.ConsoleProgram;
 //ქვესტრინგი, რომელსაც ორივე სტრინგი შეიცავს. მაგალითად:
 
 public class DNAProblem extends ConsoleProgram{
+	
+	private int length;
+	
 	public void run() {
 		String anakin = readLine("Enter Anakin's DNA: ");
 		String luke = readLine("Enter Luke's DNA: ");
@@ -20,7 +23,6 @@ public class DNAProblem extends ConsoleProgram{
 	}
 	
 	private boolean amIYourFatherLuke(String anakin, String luke) {
-		int length;
 		for(int i = 0; i < anakin.length()-1; i++){
 			char ch = anakin.charAt(i);
 			for(int j = 0; j < luke.length(); j++) {
