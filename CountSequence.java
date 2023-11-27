@@ -22,7 +22,7 @@ public class CountSequence extends ConsoleProgram{
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	
 	public void run() {
-		n = 10000;
+		n = 100;
 		int sumExp = 1;
 		for(int i = 0; i < NUM_EXP; i++){
 			while(n!=0){
@@ -31,6 +31,7 @@ public class CountSequence extends ConsoleProgram{
 				}else{
 					n = n-1;
 				}
+				sumExp++;
 			}
 		}
 		int avgSum = sumExp / NUM_EXP;
