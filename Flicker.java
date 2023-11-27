@@ -16,7 +16,7 @@ public class Flicker extends GraphicsProgram{
 	}
 	
 	public void mouseClicked(MouseEvent e){
-		obj = getElementAt(e.getX(), e.getY());
+		obj = getElementAt(e.getX() - RAD, e.getY()-RAD);
 		double x = e.getX() - RAD;
 		double y = e.getY() - RAD;
 		drawCircle(x, y);
