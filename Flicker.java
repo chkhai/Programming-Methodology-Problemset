@@ -9,7 +9,9 @@ public class Flicker extends GraphicsProgram{
 	private static final int RAD = 30;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	GObject obj;
+	GOval oval;
 	public void run(){
+		oval = new GOval(2*RAD, 2*RAD);
 		addMouseListeners();
 	}
 	
@@ -40,7 +42,6 @@ public class Flicker extends GraphicsProgram{
 
 	private void drawCircle(double x, double y){
 		if(obj == null){
-			GOval oval = new GOval(2*RAD, 2*RAD);
 			oval.setFilled(true);
 			oval.setColor(rgen.nextColor());
 			add(oval, x, y);
