@@ -20,7 +20,7 @@ public class ScoreCounter extends GraphicsProgram{
 		add(rect);
 		num = 0;
 		GLabel label = new GLabel(""+num);
-		add(label, getWidth() / 2 , getHeight() / 2- );
+		add(label, getWidth() / 2 , getHeight() / 2 );
 		addMouseListeners();
 	}
 	
