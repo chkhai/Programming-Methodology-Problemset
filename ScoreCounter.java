@@ -16,12 +16,13 @@ public class ScoreCounter extends GraphicsProgram{
 	private int click1;
 	
 	public void run() {
+		addMouseListeners();
 		rect = new GRect(getWidth() / 2 - RAD, getHeight() / 2 - RAD, 2* RAD, 2* RAD);
 		add(rect);
 		num = 0;
 		GLabel label = new GLabel(""+num);
 		add(label, getWidth() / 2 , getHeight() / 2 );
-		addMouseListeners();
+		
 	}
 	
 	public void mousePressed(MouseEvent e){
