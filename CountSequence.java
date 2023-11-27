@@ -22,7 +22,7 @@ public class CountSequence extends ConsoleProgram{
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	
 	public void run() {
-		n = 5;
+		n = 10000;
 		int sumExp = 1;
 		for(int i = 0; i < NUM_EXP; i++){
 			while(n!=0){
