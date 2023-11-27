@@ -25,6 +25,7 @@ public class ScoreCounter extends GraphicsProgram{
 		
 	}
 	
+
 	public void mousePressed(MouseEvent e){
 		click1 = e.getX();
 	}
