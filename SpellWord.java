@@ -6,6 +6,8 @@ public class SpellWord extends ConsoleProgram{
 	
 	private String text2;
 	
+	private int m;
+	
 	public void run(){
 		text1 = readLine("Enter text: "); 
 		text2 = readLine("Enter text to see if we can spell it: "); 
@@ -18,7 +20,7 @@ public class SpellWord extends ConsoleProgram{
 	
 	private boolean weCanSpell(){
 		for(int i = 0; i < text2.length(); i++){
-			int m = text1.indexOf(i);
+			m = text1.indexOf(i);
 			if(m == -1){
 				return false;
 			}else{
