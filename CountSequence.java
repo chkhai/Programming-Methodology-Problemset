@@ -28,6 +28,7 @@ public class CountSequence extends ConsoleProgram{
 			while(n!=0){
 				if(rgen.nextBoolean()){
 					n = n / 2;
+					System.out.println("bla");
 				}else{
 					n = n-1;
 				}
