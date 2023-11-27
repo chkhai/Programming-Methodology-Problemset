@@ -19,11 +19,13 @@ public class CountSequence extends ConsoleProgram{
 	
 	private int n;
 	
+	int sumExp;
+	
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	
 	public void run() {
 		n = 100;
-		int sumExp = 1;
+		sumExp = 1;
 		for(int i = 0; i < NUM_EXP; i++){
 			while(n!=0){
 				if(rgen.nextBoolean()){
