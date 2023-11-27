@@ -34,6 +34,6 @@ public class CountSequence extends ConsoleProgram{
 			}
 		}
 		int avgSum = sumExp / NUM_EXP;
-		println(avgSum)
+		println(avgSum);
 	}
 }
