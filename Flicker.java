@@ -8,19 +8,21 @@ import javafx.scene.input.MouseEvent;
 public class Flicker extends GraphicsProgram{
 	private static final int RAD = 30;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
-	
+	GObject obj;
 	public void run(){
 		addMouseListeners();
 	}
 	
 	public void mouseClicked(MouseEvent e){
-		GObject obj = getElementAt(e.getX(), e.getY());
-		if(obj == null){
-			GOval oval = new GOval(e.getX() - RAD, e.getY() - RAD);
-			oval.setFilled(true);
-			oval.setColor(rgen.nextColor());
-			add(oval);
-		}else if(obj != null){
+		obj = getElementAt(e.getX(), e.getY());
+		double x = e.getX() - RAD;
+		double y = e.getY() - RAD;
+		drawCircle(x, y);
+		flicker();
+	}
+	
+	private void flicker() {
+		if(obj != null){
 			int k = rgen.nextInt(1,5);
 			if(k==1){
 				obj.setColor(Color.BLUE);
@@ -35,5 +37,13 @@ public class Flicker extends GraphicsProgram{
 			}
 		}
 	}
-	
+
+	private void drawCircle(double x, double y){
+		if(obj == null){
+			GOval oval = new GOval(2*RAD, 2*RAD);
+			oval.setFilled(true);
+			oval.setColor(rgen.nextColor());
+			add(oval, x, y);
+		}
+	}
 }
