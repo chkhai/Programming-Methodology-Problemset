@@ -20,7 +20,7 @@ public class SpellWord extends ConsoleProgram{
 		for(int i = 0; i < text2.length(); i++){
 			int m = text1.indexOf(i);
 			if(m != -1){
-				text1= text1.substring(0,i) + text1.substring(i);
+				text1= text1.substring(0,m) + text1.substring(m);
 			}
 		}
 		if(text1.length()>0){
