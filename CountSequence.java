@@ -15,7 +15,7 @@ import acm.util.RandomGenerator;
 
 public class CountSequence extends ConsoleProgram{
 	
-	private static final int NUM_EXP=1000;
+	private static final int NUM_EXP=10;
 	
 	private int n;
 	
