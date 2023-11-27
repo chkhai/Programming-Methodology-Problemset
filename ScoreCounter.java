@@ -32,6 +32,7 @@ public class ScoreCounter extends GraphicsProgram{
 	public void mouseDragged(MouseEvent e){
 		if(e.getX() > getWidth()/2 - RAD && e.getX() < getWidth()/2 + RAD &&
 				e.getY() > getHeight()/2-RAD && e.getY() < getHeight()/2+RAD){
+			System.out.println("bla");
 			if(e.getX() > click1 && num!=9){
 				num++;
 			}else if(e.getX() < click1 && num!=0){
