@@ -11,6 +11,24 @@ public class MidtermPractice extends ConsoleProgram{
 	
 	public void run() {
 		String str = readLine("Enter string: ");
+		if(strIncr(str)){
+			println("true");
+		}
+	}
+
+	private boolean strIncr(String str) {
+		for(int i = 0; i < str.length(); i++){
+			char ch = str.charAt(i);
+			if(Character.isLowerCase(ch)){
+				for(int j = 0; j < str.substring(i).length(); j++){
+					char chch = str.charAt(j);
+					if(Character.isLowerCase(chch)){
+						return false;
+					}
+				}
+			}
+		}
+		return true;
 	}
 
 }
