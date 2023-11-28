@@ -13,6 +13,8 @@ public class MidtermPractice extends ConsoleProgram{
 		String str = readLine("Enter string: ");
 		if(strIncr(str)){
 			println("true");
+		}else{
+			println("false");
 		}
 	}
 
