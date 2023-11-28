@@ -2,17 +2,22 @@ import acm.program.ConsoleProgram;
 
 public class Alphabet extends ConsoleProgram{
 
+	private String str;
+	
+	
+	private String alphabet;
+	
 	public void run() {
-		String str = readLine("Enter string: ");
-		String alphabet = "abcdefghijklmnopqrstuvwxyz";
-		if(canSpell(str, alphabet)){
+		str = readLine("Enter string: ");
+		alphabet = "abcdefghijklmnopqrstuvwxyz";
+		if(canSpell()){
 			println("true");
 		}else{
 			println("false");
 		}
 	}
 
-	private boolean canSpell(String str, String alphabet) {
+	private boolean canSpell() {
 		for(int i =0; i<str.length(); i++){
 			char ch = str.charAt(i);
 			int m = alphabet.indexOf(ch);
