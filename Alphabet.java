@@ -4,7 +4,6 @@ public class Alphabet extends ConsoleProgram{
 
 	private String str;
 	
-	
 	private String alphabet;
 	
 	public void run() {
@@ -22,7 +21,7 @@ public class Alphabet extends ConsoleProgram{
 			char ch = str.charAt(i);
 			int m = alphabet.indexOf(ch);
 			if(m != -1){
-				str = str.substring(0, m) + str.substring(m + 1);
+				alphabet = alphabet.substring(0, m) + alphabet.substring(m + 1);
 			}else{
 				return false;
 			}
