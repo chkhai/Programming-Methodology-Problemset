@@ -11,17 +11,17 @@ public class Problem51 extends ConsoleProgram{
 		println(str);
 	}
 	
-	
-	private String updateStr(String str){
-		for(int i = 0; i < str.length(); i++){
+	private String updateStr(String str) {
+		String result = "";
+		for(int i =0; i< str.length(); i++){
 			char ch = str.charAt(i);
-			int first = str.indexOf(ch);
-			int last = str.lastIndexOf(ch);
-			if(first != -1 && last !=-1 && last!=first){
-				str = str.substring(0,last)+str.substring(last+1);
+			int m = result.indexOf(ch);
+			if(m == - 1){
+				result += ch;
 			}
 		}
-		return str;
+		
+		return result;	
 	}
-	
+
 }
