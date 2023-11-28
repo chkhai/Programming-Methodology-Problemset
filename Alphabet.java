@@ -4,7 +4,6 @@ public class Alphabet extends ConsoleProgram{
 
 	private String str;
 	
-
 	
 	public void run() {
 		str = readLine("Enter string: ");
