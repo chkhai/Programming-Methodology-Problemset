@@ -20,7 +20,6 @@ public class Problem51 extends ConsoleProgram{
 				result += ch;
 			}
 		}
-		
 		return result;	
 	}
 
