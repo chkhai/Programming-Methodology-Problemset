@@ -14,7 +14,7 @@ public class Alphabet extends ConsoleProgram{
 
 	private boolean canSpell(String str, String alphabet) {
 		for(int i =0; i<str.length(); i++){
-			char ch = str.charAt(i);
+			char ch = alphabet.charAt(i);
 			int m = str.indexOf(ch);
 			if(m != -1){
 				str = str.substring(0, m) + str.substring(m + 1);
