@@ -34,6 +34,7 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 //			int n = rgen.nextInt(1,6);
 //		}
 //		
-//	}
+//	
+		}
 
 }
