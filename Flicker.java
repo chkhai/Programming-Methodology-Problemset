@@ -9,38 +9,14 @@ public class Flicker extends GraphicsProgram{
 	private static final int RAD = 30;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	GObject obj;
-	GOval oval;
+	GOval oval = new GOval(2*RAD, 2*RAD);
 	public void run(){
 		addMouseListeners();
-		oval = new GOval(2*RAD, 2*RAD);
 	}
 	
 	public void mouseClicked(MouseEvent e){
-		obj = getElementAt(e.getX() - RAD, e.getY()-RAD);
-		double x = e.getX() - RAD;
-		double y = e.getY() - RAD;
-		if(obj == null){
-			oval.setFilled(true);
-			oval.setColor(rgen.nextColor());
-			add(oval, x, y);
-		}
-		flicker();
-	}
-	
-	private void flicker() {
-		if(obj != null){
-			int k = rgen.nextInt(1,5);
-			if(k==1){
-				obj.setColor(Color.BLUE);
-			}else if(k==2){
-				obj.setColor(Color.GREEN);
-			}else if(k==3){
-				obj.setColor(Color.RED);
-			}else if(k==4){
-				obj.setColor(Color.BLACK);
-			}else if(k==5){
-				obj.setColor(Color.YELLOW);
-			}
-		}
+		double x = e.getX();
+		double y = e.getY();
+		add(oval, x - RAD, y - RAD);
 	}
 }
