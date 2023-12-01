@@ -23,8 +23,8 @@ public class Flicker extends GraphicsProgram {
 	}
 
 	public void mouseClicked(MouseEvent e) {
-		double x = e.getX() + CIRCLE_D;
-		double y = e.getY() + CIRCLE_D;
+		double x = e.getX() - CIRCLE_D / 2;
+		double y = e.getY() - CIRCLE_D / 2;
 		obj = getElementAt(x, y);
 		if (obj == null) {
 			add(oval, x, y);
