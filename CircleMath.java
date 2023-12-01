@@ -23,7 +23,7 @@ public class CircleMath extends GraphicsProgram{
 	
 	private final static int CIRCLE_D = 40;
 	private final static int CIRCLE_NUM = 2;
-	private final static int DELAY = 2000;
+	private final static int DELAY = 4000;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	GOval o1;
 	GOval o2;
