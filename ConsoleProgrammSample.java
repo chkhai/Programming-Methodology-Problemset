@@ -25,7 +25,9 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 	public void run() {
 		String str = readLine("Enter string to tokenize: ");
 		str = str.replace("mama", "luka");
-		println(str);
+		if(str.contains("vaso")){
+			str.replace("vaso", "deda");
+		}
 //		StringTokenizer tokenizer = new StringTokenizer(str);
 //		String m = "";
 //		while(tokenizer.hasMoreTokens()){
