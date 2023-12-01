@@ -25,10 +25,10 @@ public class CircleMath extends GraphicsProgram{
 	
 	public void init() {
 		for(int i=0; i < CIRCLE_NUM; i++){
-			int x1 = rgen.nextInt();
-			int y1 = rgen.nextInt();
-			int x2 = rgen.nextInt();
-			int y2 = rgen.nextInt();
+			int x1 = rgen.nextInt(0, getWidth());
+			int y1 = rgen.nextInt(0, getHeight());
+			int x2 = rgen.nextInt(0, getWidth());
+			int y2 = rgen.nextInt(0, getHeight());
 			o = new GOval(CIRCLE_D, CIRCLE_D);
 			add(o, x1, y1);
 			add(o, x2, y2);
