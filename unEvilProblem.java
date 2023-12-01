@@ -21,14 +21,15 @@ public class unEvilProblem extends ConsoleProgram{
 	
 	
 	private String restoreStr(String str){
-		for(int i = 0; i < str.length() - 1 ; i++){
-			char ch = str.charAt(i);
-			char chch = str.charAt(i+1);
-			if(ch == chch){
-				str = str.substring(0, i) + str.substring(i+2);
+		for(int j =0; j<str.length(); j++){
+			for(int i = 0; i < str.length() - 1 ; i++){
+				char ch = str.charAt(i);
+				char chch = str.charAt(i+1);
+				if(ch == chch){
+					str = str.substring(0, i) + str.substring(i+2);
+				}
 			}
 		}
 		return str;
 	}
-	
 }
