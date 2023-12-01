@@ -49,6 +49,7 @@ public class CircleMath extends GraphicsProgram{
 			add(o1, x1, y1);
 			o2.setColor(color);
 			add(o2, x2, y2);
+			o1 = o2;
 		}
 	}
 	
@@ -70,6 +71,7 @@ public class CircleMath extends GraphicsProgram{
 			add(o2, x2, y2);
 			pause(DELAY);
 			count++;
+			o1 = o2;
 		}
 	}
 	
@@ -78,7 +80,7 @@ public class CircleMath extends GraphicsProgram{
 		double n = e.getY();
 		obj = getElementAt(m,n);
 		if(obj != null){
-			remove(o1);
+//			remove(o1);
 			remove(o2);
 		}
 		
