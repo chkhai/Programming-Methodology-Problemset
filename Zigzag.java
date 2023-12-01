@@ -25,21 +25,5 @@ public class Zigzag extends GraphicsProgram{
 		addMouseListeners();
 	}
 	
-	public void mouseClicked(MouseEvent e){
-		x2 = e.getX();
-		y2 = e.getY();
-		GLine line = new GLine(x1, y1, x2, y2);
-		add(line);
-		x1=x2;
-		y1=x2;
-	}
 	
-	public void mouseDragged(MouseEvent e){
-		x2 = e.getX();
-		y2 = e.getY();
-		GLine line = new GLine(x1, y1, x2, y2);
-		add(line);
-		x1=x2;
-		y1=y2;
-	}
 }
