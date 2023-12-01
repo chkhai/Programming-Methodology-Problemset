@@ -10,9 +10,11 @@ import acm.program.*;
 public class ConsoleProgrammSample extends ConsoleProgram {
 
 	public void run() {
-		String str = readLine("Enter string:");
-		int m = Integer.parseInt(str);
-		println(m + 1);
+//		String str = readLine("Enter string:");
+	//	int m = Integer.parseInt(str);
+		double k = readDouble("Enter double: ");
+		int o = (int)k;
+		println(o);
 	}
 
 }
