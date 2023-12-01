@@ -23,13 +23,14 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 	private static final int TRIES = 1000;
 	
 	public void run() {
-		String str = readLine("Enter string to tokenize");
-		StringTokenizer tokenizer = new StringTokenizer(str);
-		String m = "";
-		while(tokenizer.hasMoreTokens()){
-			m += tokenizer.nextToken();
-		}
-		println(m);
+		String str = readLine("Enter string to tokenize: ");
+		str = str.replace("mama", "luka");
+//		StringTokenizer tokenizer = new StringTokenizer(str);
+//		String m = "";
+//		while(tokenizer.hasMoreTokens()){
+//			m += tokenizer.nextToken();
+//		}
+//		println(m);
 	
 	
 	}
