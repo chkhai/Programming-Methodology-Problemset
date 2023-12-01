@@ -46,7 +46,7 @@ public class CircleMath extends GraphicsProgram{
 	
 	private void createTwoCircle() {
 		add(o, x1, y1);
-		add(o, x2, y2)
+		add(o, x2, y2);
 	}
 
 	public void run() {
