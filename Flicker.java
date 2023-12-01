@@ -17,12 +17,12 @@ public class Flicker extends GraphicsProgram {
 	private GOval oval = new GOval(CIRCLE_D, CIRCLE_D);
 
 	public void run() {
-		oval.setFilled(true);
-//		oval.setColor(rgen.nextColor());
+
 		addMouseListeners();
 	}
 
 	public void mouseClicked(MouseEvent e) {
+		oval.setFilled(true);
 		oval.setColor(rgen.nextColor());
 		double x = e.getX() - CIRCLE_D / 2;
 		double y = e.getY() - CIRCLE_D / 2;
