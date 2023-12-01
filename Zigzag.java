@@ -28,8 +28,8 @@ public class Zigzag extends GraphicsProgram{
 	public void mouseClicked(MouseEvent e){
 		x2 = e.getX();
 		y2 = e.getY();
-//		x2=x1;
-//		y2=y1;
+		x2=x1;
+		y2=y1;
 	}
 	
 	public void mouseDragged(MouseEvent e){
