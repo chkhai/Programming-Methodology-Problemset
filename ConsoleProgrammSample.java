@@ -24,7 +24,7 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 	
 	public void run() {
 		String str = readLine("Enter string to tokenize");
-		StringTokenizer tokenizer = new StringTokenizer(str);	
+		StringTokenizer tokenizer = new StringTokenizer(str, " ");	
 		while(tokenizer.hasMoreTokens()){
 			println(tokenizer.nextToken());
 		}
