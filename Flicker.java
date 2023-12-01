@@ -49,6 +49,7 @@ public class Flicker extends GraphicsProgram {
 			} else if (n == 5) {
 				obj.setColor(Color.GREEN);
 			}
+			pause(10);
 		}
 
 	}
