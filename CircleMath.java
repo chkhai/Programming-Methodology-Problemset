@@ -33,7 +33,6 @@ public class CircleMath extends GraphicsProgram{
 			o.setFilled(true);
 			o.setColor(rgen.nextColor());
 			add(o, x1, y1);
-			o.setColor(rgen.nextColor());
 			add(o, x2, y2);
 		}
 	}
