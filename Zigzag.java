@@ -16,24 +16,33 @@ import acm.program.GraphicsProgram;
 
 public class Zigzag extends GraphicsProgram{
 	
-	private double x1=0;
-	private double y1=0;
-	private double x2;
-	private double y2;
-	
-	public void run() {
-		addMouseListeners();
-	}
-	
-	public void mouseClicked(MouseEvent e){
-		x2 = e.getX();
-		y2 = e.getY();
-		x2=x1;
-		y2=y1;
-	}
-	
-	public void mouseDragged(MouseEvent e){
-		GLine line = new GLine(x1, y1, x2, y2);
-		add(line);
+	public class Midterm2021Session1ZigZag extends GraphicsProgram{
+		private GPoint prevPoint;
+		private GLine line;
+		public void run(){
+			addMouseListeners();
+			prevPoint = new GPoint(0, 0);
+		}
+		
+		public void mousePressed(MouseEvent e){
+			line = new GLine(prevPoint.getX(), prevPoint.getY(),
+					e.getX(), e.getY());
+			add(line);
+			prevPoint = new GPoint(e.getX(), e.getY());
+		}
+		
+		public void mouseDragged(MouseEvent e){
+			line.setEndPoint(e.getX(), e.getY());
+			prevPoint = new GPoint(e.getX(), e.getY());
+		}
+		
 	}
 }
+		// we don't need mouseClicked anymore, same happens in mousePressed
+//		public void mouseClicked(MouseEvent e){
+//			line = new GLine(prevPoint.getX(), prevPoint.getY(),
+//					e.getX(), e.getY());
+//			add(line);
+//			prevPoint = new GPoint(e.getX(), e.getY());
+//		}
+
