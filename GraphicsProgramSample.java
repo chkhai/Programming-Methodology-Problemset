@@ -1,6 +1,5 @@
 import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
-import acm.graphics*;
 import acm.util.RandomGenerator;
 
 import java.awt.event.MouseEvent;
