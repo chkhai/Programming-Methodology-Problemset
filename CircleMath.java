@@ -36,7 +36,7 @@ public class CircleMath extends GraphicsProgram{
 			y1 = rgen.nextInt(0, getHeight() - CIRCLE_D);
 			o = new GOval(CIRCLE_D, CIRCLE_D);
 			o.setFilled(true);
-			o.setFillColor(rgen.nextColor());
+			o.setColor(rgen.nextColor());
 			for(int j = 0; j<2; j++){
 				o.setColor(color);
 				add(o, x1, y1);
