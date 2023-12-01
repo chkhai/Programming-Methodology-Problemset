@@ -25,5 +25,12 @@ public class Zigzag extends GraphicsProgram{
 		addMouseListeners();
 	}
 	
+	public void mouseClicked(MouseEvent e){
+		
+	}
 	
+	public void mouseDragged(MouseEvent e){
+		GOval oval = new GOval(50, 50);
+		add(oval, e.getX(), e.getY());
+	}
 }
