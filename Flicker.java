@@ -1,22 +1,55 @@
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 
+import acm.graphics.GObject;
 import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
-//გააკეთეთ Paint-ის ფანქრის ანალოგიური ხელსაწყო. კერძოდ, მაუსის ყოველ მოძრაობაზე
-//ეკრანზე დაამატეთ გაფერადებული წრეწირები იმავე წერტილში სადაც მაუსი მდებარეობს.
-public class Flicker extends GraphicsProgram{
-	private static final int RADIUS = 25;
-	private GOval circle;
+import acm.util.RandomGenerator;
+
+public class Flicker extends GraphicsProgram {
+
+	private RandomGenerator rgen = RandomGenerator.getInstance();
+
+	private static final int CIRCLE_D = 50;
+
+	private GObject obj;
+
+	private GOval oval = new GOval(CIRCLE_D, CIRCLE_D);
+
 	public void run() {
-		circle = new GOval(2 * RADIUS, 2 * RADIUS);
-		circle.setFilled(true);
-		circle.setColor(Color.pink);
+		oval.setFilled(true);
+		oval.setColor(rgen.nextColor());
 		addMouseListeners();
 	}
-	
-	public void mouseMoved(MouseEvent e){
-		add(circle, e.getX() - RADIUS, e.getY() - RADIUS);
+
+	public void mouseClicked(MouseEvent e) {
+		double x = e.getX() - CIRCLE_D;
+		double y = e.getY() - CIRCLE_D;
+		obj = getElementAt(x, y);
+		if (obj == null) {
+			add(oval, x, y);
+		} else {
+			flicker();
+		}
 	}
-	
+
+	private void flicker() {
+//		int n = rgen.nextInt(1, 5);
+		while (true) {
+			int n = rgen.nextInt(1, 5);
+			if (n == 1) {
+				obj.setColor(Color.BLUE);
+			} else if (n == 2) {
+				obj.setColor(Color.BLACK);
+			} else if (n == 3) {
+				obj.setColor(Color.RED);
+			} else if (n == 4) {
+				obj.setColor(Color.YELLOW);
+			} else if (n == 5) {
+				obj.setColor(Color.GREEN);
+			}
+		}
+
+	}
+
 }
