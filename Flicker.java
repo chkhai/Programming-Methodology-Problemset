@@ -11,8 +11,8 @@ public class Flicker extends GraphicsProgram{
 	GObject obj;
 	GOval oval;
 	public void run(){
-		oval = new GOval(2*RAD, 2*RAD);
 		addMouseListeners();
+		oval = new GOval(2*RAD, 2*RAD);
 	}
 	
 	public void mouseClicked(MouseEvent e){
