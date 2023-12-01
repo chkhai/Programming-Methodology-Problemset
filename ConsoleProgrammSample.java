@@ -10,11 +10,9 @@ import acm.program.*;
 public class ConsoleProgrammSample extends ConsoleProgram {
 
 	public void run() {
-		int k = 5;
-		while(k>3){
-			k--;
-		}
-		println(k);
+		String str = readLine("Enter string:");
+		int m = Integer.parseInt(str);
+		println(m);
 	}
 
 }
