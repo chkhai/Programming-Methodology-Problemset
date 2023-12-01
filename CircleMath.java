@@ -22,7 +22,7 @@ import acm.util.RandomGenerator;
 public class CircleMath extends GraphicsProgram{
 	
 	private final static int CIRCLE_D = 40;
-	private final static int CIRCLE_NUM = 25;
+	private final static int CIRCLE_NUM = 2;
 	private final static int DELAY = 2000;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	GOval o1;
@@ -77,7 +77,7 @@ public class CircleMath extends GraphicsProgram{
 		double m = e.getX();
 		double n = e.getY();
 		obj = getElementAt(m,n);
-		if(obj != null){
+		if(obj != null && obj == o1){
 			remove(o1);
 			remove(o2);
 		}
