@@ -21,20 +21,7 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 	private static final int TRIES = 1000;
 	
 	public void run() {
-		
-//		int count = 0;
-//		int avg;
-//		for(int i = 0; i < TRIES; i++){
-//			checkTheProcces(count, avg);
-//		}
-//	}
-//
-//	private void checkTheProcces(int count, int avg) {
-//		for(int i = 0; i < 4; i++){
-//			int n = rgen.nextInt(1,6);
-//		}
-//		
-//	
+		println(25%7);
 		}
 
 }
