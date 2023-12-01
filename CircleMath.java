@@ -20,7 +20,7 @@ import acm.util.RandomGenerator;
 public class CircleMath extends GraphicsProgram{
 	
 	private final static int CIRCLE_D = 40;
-	private final static int CIRCLE_NUM = 2;
+	private final static int CIRCLE_NUM = 25;
 	private final static int DELAY = 2000;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	GOval o1;
@@ -51,11 +51,20 @@ public class CircleMath extends GraphicsProgram{
 	public void run() {
 		addMouseListeners();
 		while(true){
-//			x1 = rgen.nextInt(0, getWidth() - CIRCLE_D);
-//			y1 = rgen.nextInt(0, getHeight() - CIRCLE_D);
-//			x2 = rgen.nextInt(0, getWidth() - CIRCLE_D);
-//			y2 = rgen.nextInt(0, getHeight() - CIRCLE_D);
-			
+			x1 = rgen.nextInt(0, getWidth() - CIRCLE_D);
+			y1 = rgen.nextInt(0, getHeight() - CIRCLE_D);
+			x2 = rgen.nextInt(0, getWidth() - CIRCLE_D);
+			y2 = rgen.nextInt(0, getHeight() - CIRCLE_D);
+			o1 = new GOval(CIRCLE_D, CIRCLE_D);
+			o2 = new GOval(CIRCLE_D, CIRCLE_D);
+			o1.setFilled(true);
+			o2.setFilled(true);
+			Color color = rgen.nextColor();
+			o1.setColor(color);
+			add(o1, x1, y1);
+			o2.setColor(color);
+			add(o2, x2, y2);
+			pause(DELAY);
 		}
 	}
 }
