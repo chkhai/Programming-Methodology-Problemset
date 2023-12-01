@@ -24,11 +24,12 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 	
 	public void run() {
 		String str = readLine("Enter string to tokenize");
-		StringTokenizer tokenizer = new StringTokenizer(str, "l");	
+		StringTokenizer tokenizer = new StringTokenizer(str);
+		String m = "";
 		while(tokenizer.hasMoreTokens()){
-			str = tokenizer.nextToken();
+			m += tokenizer.nextToken();
 		}
-		println(str);
+		println(m);
 	
 	
 	}
