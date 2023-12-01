@@ -28,6 +28,7 @@ public class CircleMath extends GraphicsProgram{
 	int y1;
 	int x2;
 	int y2 ;
+	Color color;
 	
 	public void init() {
 		for(int i=0; i < CIRCLE_NUM; i++){
@@ -37,7 +38,7 @@ public class CircleMath extends GraphicsProgram{
 			y2 = rgen.nextInt(0, getHeight() - CIRCLE_D);
 			o = new GOval(CIRCLE_D, CIRCLE_D);
 			o.setFilled(true);
-			Color color = rgen.nextColor();
+			color = rgen.nextColor();
 			o.setColor(color);
 			add(o, x1, y1);
 			o.setColor(color);
