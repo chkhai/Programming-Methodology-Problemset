@@ -40,12 +40,15 @@ public class CircleMath extends GraphicsProgram{
 			o.setFilled(true);
 			color = rgen.nextColor();
 			o.setColor(color);
-			add(o, x1, y1);
-			o.setColor(color);
-			add(o, x2, y2);
+			createTwoCircle();
 		}
 	}
 	
+	private void createTwoCircle() {
+		add(o, x1, y1);
+		add(o, x2, y2)
+	}
+
 	public void run() {
 		addMouseListeners();
 		while(true){
