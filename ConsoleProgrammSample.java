@@ -28,6 +28,7 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 		while(tokenizer.hasMoreTokens()){
 			str = tokenizer.nextToken();
 		}
+		println(str);
 	
 	
 	}
