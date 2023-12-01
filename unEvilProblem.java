@@ -16,11 +16,12 @@ public class unEvilProblem extends ConsoleProgram{
 	public void run() {
 		String str = readLine("Enter string: ");
 		str = restoreStr(str);
+		println(str);
 	}
 	
 	
 	private String restoreStr(String str){
-		for(int i = 0; i < str.length(); i++){
+		for(int i = 0; i < str.length() - 1 ; i++){
 			char ch = str.charAt(i);
 			char chch = str.charAt(i+1);
 			if(ch == chch){
