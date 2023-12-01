@@ -21,7 +21,6 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 	private static final int TRIES = 1000;
 	
 	public void run() {
-		println(25%7);
 		}
 
 }
