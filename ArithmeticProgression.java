@@ -12,10 +12,16 @@ import acm.program.ConsoleProgram;
 public class ArithmeticProgression extends ConsoleProgram{
 	private static final int SENTINEL = -1;
 	public void run(){
-		int count = 0;
+		int n = readInt("Enter number: ");
+		int count = n;
 		while(true){
 			int k = readInt("Enter number: ");
-			if(k == S)
+			count = k - n;
+			n = k;
+			if(k == SENTINEL){
+				break;
+			}
+
 		}
 	}
 }
