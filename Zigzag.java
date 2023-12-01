@@ -15,8 +15,6 @@ import acm.program.GraphicsProgram;
 //პროგრამაში Paint. ამოხსნა დაწერეთ zigzag.java
 
 public class Zigzag extends GraphicsProgram{
-	
-	public class Midterm2021Session1ZigZag extends GraphicsProgram{
 		private GPoint prevPoint;
 		private GLine line;
 		public void run(){
@@ -37,7 +35,6 @@ public class Zigzag extends GraphicsProgram{
 		}
 		
 	}
-}
 		// we don't need mouseClicked anymore, same happens in mousePressed
 //		public void mouseClicked(MouseEvent e){
 //			line = new GLine(prevPoint.getX(), prevPoint.getY(),
