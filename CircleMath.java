@@ -77,7 +77,7 @@ public class CircleMath extends GraphicsProgram{
 		double m = e.getX();
 		double n = e.getY();
 		obj = getElementAt(m,n);
-		if(obj != null && obj == o1){
+		if(obj != null){
 			remove(o1);
 			remove(o2);
 		}
