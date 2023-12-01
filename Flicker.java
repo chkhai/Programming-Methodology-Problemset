@@ -12,7 +12,6 @@ public class Flicker extends GraphicsProgram{
 	GOval oval;
 	public void run(){
 		oval = new GOval(2*RAD, 2*RAD);
-		add(oval);
 		addMouseListeners();
 	}
 	
@@ -20,7 +19,11 @@ public class Flicker extends GraphicsProgram{
 		obj = getElementAt(e.getX() - RAD, e.getY()-RAD);
 		double x = e.getX() - RAD;
 		double y = e.getY() - RAD;
-		drawCircle(x, y);
+		if(obj == null){
+			oval.setFilled(true);
+			oval.setColor(rgen.nextColor());
+			add(oval, x, y);
+		}
 		flicker();
 	}
 	
@@ -38,14 +41,6 @@ public class Flicker extends GraphicsProgram{
 			}else if(k==5){
 				obj.setColor(Color.YELLOW);
 			}
-		}
-	}
-
-	private void drawCircle(double x, double y){
-		if(obj == null){
-			oval.setFilled(true);
-			oval.setColor(rgen.nextColor());
-			add(oval, x, y);
 		}
 	}
 }
