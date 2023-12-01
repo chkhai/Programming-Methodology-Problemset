@@ -1,5 +1,3 @@
-import java.awt.Color;
-
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
@@ -33,9 +31,9 @@ public class CircleMath extends GraphicsProgram{
 			int y2 = rgen.nextInt(0, getHeight() - CIRCLE_D);
 			o = new GOval(CIRCLE_D, CIRCLE_D);
 			o.setFilled(true);
-			Color color = rgen.nextColor();
-			o.setColor(color);
+			o.setColor(rgen.nextColor());
 			add(o, x1, y1);
+			o.setColor(rgen.nextColor());
 			add(o, x2, y2);
 		}
 	}
