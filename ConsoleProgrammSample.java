@@ -5,6 +5,8 @@
  * smallest and largest values in a list of integers.
  */
 
+import java.util.StringTokenizer;
+
 import acm.program.*;
 import acm.util.RandomGenerator;
 
@@ -21,6 +23,13 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 	private static final int TRIES = 1000;
 	
 	public void run() {
+		String str = readLine("Enter string to tokenize");
+		StringTokenizer tokenizer = new StringTokenizer(str);	
+		while(tokenizer.hasMoreTokens()){
+			println(tokenizer.nextToken());
 		}
+	
+	
+	}
 
 }
