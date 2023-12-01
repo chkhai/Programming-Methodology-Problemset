@@ -1,4 +1,6 @@
 import java.awt.Color;
+import java.awt.event.MouseEvent;
+import java.awt.*;
 
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
@@ -25,10 +27,12 @@ public class CircleMath extends GraphicsProgram{
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	GOval o1;
 	GOval o2;
-	int x1;
-	int y1;
-	int x2;
-	int y2 ;
+	double x1;
+	double y1;
+	double x2;
+	double y2;
+	int count = 25;
+	GObject obj;
 	
 	public void init() {
 		for(int i=0; i < CIRCLE_NUM; i++){
@@ -65,6 +69,18 @@ public class CircleMath extends GraphicsProgram{
 			o2.setColor(color);
 			add(o2, x2, y2);
 			pause(DELAY);
+			count++;
 		}
 	}
+	
+	public void mouseClicked(MouseEvent e){
+		double m = e.getX();
+		double n = e.getY();
+		obj = getElementAt(m,n);
+		if(obj != null){
+			remove(obj);
+		}
+		
+	}
+	
 }
