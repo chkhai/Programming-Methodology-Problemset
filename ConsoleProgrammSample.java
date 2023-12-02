@@ -33,10 +33,13 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 //		}
 //		println(m);
 		
-		String s = readLine("Enter string");
-		int k = Integer.parseInt(s);
-		println(k);
+//		String s = readLine("Enter string");
+//		int k = Integer.parseInt(s);
+//		println(k);
 		
+		int m = 12345;
+		String s = Integer.toString(m);
+		println(s);
 	
 	
 	}
