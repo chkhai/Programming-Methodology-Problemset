@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 import acm.program.ConsoleProgram;
 
 //კონსოლიდან შეგყვავს n და შემდეგ n ცალი მთელი რიცხვი, დაალაგეთ რიცხვები
@@ -12,6 +14,7 @@ public class Problem56 extends ConsoleProgram{
 			arr[i] = readInt("Enter number: ");
 		}
 		sort(arr);
+		println(Arrays.toString(arr));
 	}
 
 	private void sort(int[] arr) {
