@@ -18,16 +18,20 @@ public class Problem56 extends ConsoleProgram{
 	}
 
 	private void sort(int[] arr) {
-		int min = arr[0];
 		for(int i = 0; i < arr.length; i++){
-			if(arr[i] < min){
-				swap(min, arr, i);
-			}
+////			int min = findMin(arr);
+//			if(arr[i] < min){
+//				swap(min, arr, i);
+//			}
 			
 			
 		}
 		
 	}
+//
+//	private int findMin(int[] arr) {
+//		for(int min = )
+//	}
 
 	private void swap(int min, int[] arr, int i) {
 		int temp = min;
