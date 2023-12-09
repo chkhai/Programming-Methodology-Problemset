@@ -8,7 +8,7 @@ public class Problem49 extends ConsoleProgram{
 	}
 
 	private int stringToInteger(String str) {
-		int k = 1;
+		int k = 0;
 		for(int i = 0; i < str.length(); i++){
 			char currCh = str.charAt(i);
 			int currDigit = currCh - '0';
