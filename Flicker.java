@@ -5,7 +5,7 @@ import acm.graphics.GObject;
 import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
-
+// not finished
 public class Flicker extends GraphicsProgram {
 
 	private RandomGenerator rgen = RandomGenerator.getInstance();
