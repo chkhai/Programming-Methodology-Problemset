@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 //აბრუნებს ამ რიცხვის ყველაზე დიდ მარტივ გამყოფს. ჩათვალეთ, რომ n>1
 //მაგალითად 24-ის ყველაზე დიდი მარტივი გამყოფია 3, ხოლო 37-ის ყველაზე დიდი მარტივი
 //გამყოფია 37
-public class MidTerm12 extends ConsoleProgram{
+public class GetBiggestDivisor extends ConsoleProgram{
 	
 	public void run() {
 		int a = readInt("Enter natural number: ");
