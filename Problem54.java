@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 
 import acm.program.ConsoleProgram;
 
-public class Problem53 extends ConsoleProgram{
+public class Problem54 extends ConsoleProgram{
 	public void run() {
 		
 //		try{
