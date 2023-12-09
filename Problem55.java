@@ -6,6 +6,9 @@ public class Problem55 extends ConsoleProgram{
 		int k = readInt("Enter natural numer: ");
 		k = checkTheInput(k);
 		int[] arr = new int[k];
+		for(int i = 0; i < arr.length; i++){
+			arr[i] = readInt("Enter numer: ");
+		}
 		if(arrIsSorted(arr)){
 			println("Array is sorted!");
 		}else{
