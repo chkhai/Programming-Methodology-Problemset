@@ -22,10 +22,11 @@ public class LogarithmProblem extends ConsoleProgram{
 	}
 
 	private int power(int m, int i) {
-		int count = 1;
-		for(int j= 0; j<m; j++){
-			count *= m;
+		int multiply = 1;
+		for (int j = 0; j < i; j++) {
+			multiply *= m; // res = res * n;
 		}
-		return count;
+		return multiply;
+		
 	}
 }
