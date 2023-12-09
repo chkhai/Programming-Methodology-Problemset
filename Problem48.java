@@ -5,13 +5,7 @@ public class Problem48 extends ConsoleProgram{
 	
 	public void run() {
 		String input = readLine("Enter a word: ");
-		keepTheTrackOfSymbols(input);
-	}
-
-	private void keepTheTrackOfSymbols(String input) {
-		for(int i = 0; i < input.length() - 1; i++){
-			char ch = input.charAt(i);
-		}
+		
 	}
 }
 
