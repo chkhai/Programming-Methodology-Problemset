@@ -1,25 +1,30 @@
-import java.io.BufferedReader;
-
 import acm.program.ConsoleProgram;
 
+//54. კონსოლიდან შეგყვავს n და შემდეგ n ცალი მთელი რიცხვი, იპოვეთ და დაბეჭდეთ ამ
+//რიცხვებს შორის ორი მაქსიმალური რიცხვი.
+
 public class Problem54 extends ConsoleProgram{
+	
 	public void run() {
 		
-//		try{
-//			BufferedReader rd = new BufferedReader(FileReader());
-//			String text = "";
-//			
-//			while(true){
-//				String line = rd.readLine();
-//				if(line == null){
-//					break;
-//				}
-//				text += line;
-//			}
-//			
-//		} catch(IOExeption e) {
-//			
-//		}
-//		
+		int k = readInt("Enter number:");
+		while(k <= 0){
+			println("Number must be positive!");
+			k = readInt("Enter number");
 		}
+		int[] nums = new int[k];
+		int max = nums[0];
+		int min = nums[1];
+		for(int i = 0; i < nums.length; i++){
+			if(nums[i] > max){
+				max = nums[i];
+			}else if(nums[i] < min){
+				min = nums[i];
+			}
+			
+		}
+		println("Maximum number is " + max);
+		println("Minimum number is " + min);
+		
+	}
 }
