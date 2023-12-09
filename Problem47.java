@@ -1,4 +1,24 @@
+import acm.program.ConsoleProgram;
+//დაწერეთ მეთოდი რომელსაც გადაეცემა სტიგნი და რომელიც აბრუნებს ამ სტრინგში
+//ყველაზე ხშირ სიმბოლოს.
+public class Problem47 extends ConsoleProgram{
+	
+	public void run(){
+		String word = readLine("Enter word: ");
+		boolean palindrom = isPalindrom(word);
+			if(palindrom){
+				println(word + " is palindrom.");
+			} else {
+				println(word + " is not palindrom.");
+			}
+		}
 
-public class Problem47 {
-
+	private boolean isPalindrom(String word) {
+		for(int i = 0; i < word.length(); i++){
+			if(word.charAt(i) != word.charAt(word.length() - i - 1)){
+				return false;
+			}
+		}
+		return true;
+	}
 }
