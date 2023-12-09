@@ -2,7 +2,7 @@ import java.awt.event.MouseEvent;
 
 import acm.graphics.*;
 import acm.program.*;
-
+//not finished
 public class ScoreCounter extends GraphicsProgram{
 	
 	private static final int RAD = 100;
