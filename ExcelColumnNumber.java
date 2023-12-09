@@ -11,18 +11,12 @@ public class ExcelColumnNumber extends ConsoleProgram{
 	
 	private String detectColumnName(int columnNumber){
 		String str = "";
-
         while (columnNumber > 0) {
-            
             int rem = (columnNumber - 1) % 26;
-
             char digit = (char) ('A' + rem);
-
             str = digit + str;
-
             columnNumber = (columnNumber - 1) / 26;
         }
-
         return str;
 	}
 	
