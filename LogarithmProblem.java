@@ -10,11 +10,21 @@ public class LogarithmProblem extends ConsoleProgram{
 	}
 
 	private int log(int m, int n) {
-		int multiply = 1;
-		int count = 0;
-		while(multiply < n){
-			multiply = multiply * m;
-			count++;
+		
+		for(int i = 0; i < n; i++){
+			if(power(m, i) > n){
+				return i -1;
+			}else if(power(m, i) == n){
+				return i;
+			}
+		}
+		return 0;
+	}
+
+	private int power(int m, int i) {
+		int count = 1;
+		for(int j= 0; j<m; j++){
+			count *= m;
 		}
 		return count;
 	}
