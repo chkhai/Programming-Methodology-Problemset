@@ -7,13 +7,13 @@ public class Problem54 extends ConsoleProgram{
 	
 	public void run() {
 		
-		int k = readInt("Enter number:");
+		int k = readInt("Enter number: ");
 		k = checkTheInput(k);
 		int[] nums = new int[k];
 		int max = nums[0];
 		int min = nums[1];
 		for(int i = 0; i < nums.length; i++){
-			nums[i] = readInt("Enter number:");
+			nums[i] = readInt("Enter number: ");
 			if(nums[i] > max){
 				max = nums[i];
 			}else if(nums[i] < min){
