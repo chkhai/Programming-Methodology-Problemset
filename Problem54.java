@@ -19,7 +19,6 @@ public class Problem54 extends ConsoleProgram{
 			}else if(nums[i] < min){
 				min = nums[i];
 			}
-			
 		}
 		println("Maximum number is " + max);
 		println("Minimum number is " + min);
