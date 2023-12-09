@@ -24,7 +24,7 @@ public class LogarithmProblem extends ConsoleProgram{
 	private int power(int m, int i) {
 		int multiply = 1;
 		for (int j = 0; j < i; j++) {
-			multiply *= m; // res = res * n;
+			multiply *= m;
 		}
 		return multiply;
 		
