@@ -15,31 +15,24 @@ import acm.program.GraphicsProgram;
 //პროგრამაში Paint. ამოხსნა დაწერეთ zigzag.java
 
 public class Zigzag extends GraphicsProgram{
-		private GPoint prevPoint;
+		private GPoint lastPoint;
 		private GLine line;
 		public void run(){
 			addMouseListeners();
-			prevPoint = new GPoint(0, 0);
+			lastPoint = new GPoint(0, 0);
 		}
 		
 		public void mousePressed(MouseEvent e){
-			line = new GLine(prevPoint.getX(), prevPoint.getY(),
+			line = new GLine(lastPoint.getX(), lastPoint.getY(),
 					e.getX(), e.getY());
 			add(line);
-			prevPoint = new GPoint(e.getX(), e.getY());
+			lastPoint = new GPoint(e.getX(), e.getY());
 		}
 		
 		public void mouseDragged(MouseEvent e){
 			line.setEndPoint(e.getX(), e.getY());
-			prevPoint = new GPoint(e.getX(), e.getY());
+			lastPoint = new GPoint(e.getX(), e.getY());
 		}
 		
 	}
-		// we don't need mouseClicked anymore, same happens in mousePressed
-//		public void mouseClicked(MouseEvent e){
-//			line = new GLine(prevPoint.getX(), prevPoint.getY(),
-//					e.getX(), e.getY());
-//			add(line);
-//			prevPoint = new GPoint(e.getX(), e.getY());
-//		}
 
