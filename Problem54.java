@@ -12,13 +12,6 @@ public class Problem54 extends ConsoleProgram{
 		int[] nums = new int[k];
 		int max = nums[0];
 		int min = nums[1];
-		detectMinAndMax(nums, min, max);
-		println("Maximum number is " + max);
-		println("Minimum number is " + min);
-		
-	}
-
-	private void detectMinAndMax(int[] nums, int max, int min) {
 		for(int i = 0; i < nums.length; i++){
 			nums[i] = readInt("Enter number:");
 			if(nums[i] > max){
@@ -28,6 +21,8 @@ public class Problem54 extends ConsoleProgram{
 			}
 			
 		}
+		println("Maximum number is " + max);
+		println("Minimum number is " + min);
 		
 	}
 
