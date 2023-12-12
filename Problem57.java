@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 import acm.program.ConsoleProgram;
 
 //დაწერეთ მეთოდი, რომელსაც გადაეცემა ორი სტრინგი და აბრუნებს true-ს თუკი ეს ორის
@@ -16,17 +18,19 @@ public class Problem57 extends ConsoleProgram{
 	}
 
 	private boolean areAnagrams(String str1, String str2) {
-		int[] count1= new int[26];
-		int[] count2= new int[26];
+		int[] count1= getCount(str1);
+		int[] count2= getCount(str2);
 		
-		for(int i = 0; i < str1.length(); i++){
-			char ch = str1.charAt(i);
+		return Arrays.equals(count1, count2);
+	}
+	
+	
+	private int[] getCount(String s){
+		for(int i = 0; i < s.length(); i++){
+			char ch = s.charAt(i);
 			int index = ch - 'a';
+			count1[index]++; 
 		}
-		
-		
-		
-		return false;
 	}
 	
 	
