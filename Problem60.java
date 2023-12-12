@@ -10,22 +10,24 @@ public class Problem60 extends ConsoleProgram{
 	private static final int SENTINEL = -1;
 	
 	public void run() {
-		ArrayList<Integer> arrayList = new ArrayList<Integer>();
+		ArrayList<Integer> list = new ArrayList<Integer>();
 		while(true){
 			int k = readInt("Enter number: ");
 			if(k == SENTINEL){
 				break;
 			}
-			arrayList.add(k);
+			 list.add(k);
 		}
-		reverseArray();
+		printReverseArray(list);
 		
 	}
 
-	private void reverseArray() {
-		
-		
+	private void printReverseArray(ArrayList<Integer>  list) {
+		for(int i = list.size() - 1; i >= 0 ; i--){
+			println(list.get(i));
+		}
 	}
+
 	
-	
+
 }
