@@ -26,11 +26,13 @@ public class Problem57 extends ConsoleProgram{
 	
 	
 	private int[] getCount(String s){
+		int[] counts = new int[26];
 		for(int i = 0; i < s.length(); i++){
 			char ch = s.charAt(i);
 			int index = ch - 'a';
-			count1[index]++; 
+			counts[index]++; 
 		}
+		return counts;
 	}
 	
 	
