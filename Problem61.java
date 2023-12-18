@@ -26,7 +26,7 @@ public class Problem61 extends ConsoleProgram{
 
 	private void checkTheSums(int[] arr, int m) {
 		for(int i=0; i<arr.length; i++){
-			for(int j=0; i<arr.length; j++){
+			for(int j=i; i<arr.length; j++){
 				if(arr[i]+arr[j]==m){
 					k = arr[i];
 					t = arr[j];
