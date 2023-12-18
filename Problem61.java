@@ -17,8 +17,11 @@ public class Problem61 extends ConsoleProgram{
 		}
 		checkTheSums(arr, m);
 		if(k != 0 && t != 0){
-			println(k + t == 0);
+			println(k + " + " + t + " = " + m);
+		}else{
+			println("Can't find the sum.");
 		}
+			
 	}
 
 	private void checkTheSums(int[] arr, int m) {
