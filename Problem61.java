@@ -31,6 +31,7 @@ public class Problem61 extends ConsoleProgram{
 				if(arr[i]+arr[j]==m){
 					k = arr[i];
 					t = arr[j];
+					break;
 				}
 			}
 		}
