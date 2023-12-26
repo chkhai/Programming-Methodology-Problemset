@@ -1,8 +1,8 @@
+import java.awt.event.ActionEvent;
+
 import javax.swing.*;
 
-import acm.program.ConsoleProgram;
 import acm.program.GraphicsProgram;
-import acm.program.Program;
 
 //თქვენი ამოცანაა გრაფიკული პროგრამის საშუალებით გააკეთოთ ჩატი. ფანჯარაზე, SOUTH
 //რეგიონზე უნდა გქონდეთ ერთი ტექსტფილდი და ერთი ღილაკი ტექტით Enter.
@@ -12,12 +12,30 @@ import acm.program.Program;
 //ხდება ხოლმე. თუკი ტექსტი ჩაცდება ეკრანს არაუშავს.
 
 public class Problem68 extends GraphicsProgram{
+	private JTextField field;
+	private JButton button;
+	
+	public void init() {
+		JTextField field = new JTextField(10);
+		JButton button = new JButton("Enter: ");
+		add(field, SOUTH);
+		add(button, SOUTH);
+		field.addActionListener(this);
+		addActionListeners();
+	}
+	
+	
 	
 	public void run() {
-		JTextField field = new JTextField(10);
-		add(field, SOUTH);
-		JButton button = new JButton("Enter: ");
-		add(button, SOUTH);
 		
+	}
+	
+	public void actionPerformed(ActionEvent e){
+		println("here");
+		if(e.getSource()==field){
+			String text = field.getText();
+			println(text);
+			field.setText("");
+		}
 	}
 }
