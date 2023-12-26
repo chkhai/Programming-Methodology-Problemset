@@ -14,5 +14,8 @@ public class Problem68 extends Program{
 	public void run() {
 		JTextField field = new JTextField(10);
 		add(field, SOUTH);
+		JButton button = new JButton("Enter: ");
+		add(button, SOUTH);
+		
 	}
 }
