@@ -11,7 +11,7 @@ import acm.program.Program;
 //ტექსტის შეყვანისას ახალი ტექსტი წინა ტექსტის ქვემოთ უნდა გამოცნდეს(როგორც ჩატში
 //ხდება ხოლმე. თუკი ტექსტი ჩაცდება ეკრანს არაუშავს.
 
-public class Problem68 extends ConsoleProgram{
+public class Problem68 extends GraphicsProgram{
 	
 	public void run() {
 		JTextField field = new JTextField(10);
