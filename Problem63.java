@@ -44,7 +44,7 @@ public class Problem63 extends ConsoleProgram {
 
 	private void printPeoplesNamesAndTheirFriends() {
 		for(String person : friendsList.keySet()){
-			println(person + "'s friends are: ");
+			print(person + "'s friends are: ");
 			printFriends(person);
 		}
 		
