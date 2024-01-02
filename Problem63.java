@@ -17,6 +17,7 @@ public class Problem63 extends ConsoleProgram {
 		while(true){
 			String name = readLine("Enter your name: ");
 			if(friendsList.containsKey(name)){
+				System.out.println("acs");
 				println(name + "'s friend list is already saved. Please type in another person.");
 				name = readLine("Enter your name: ");
 			}
