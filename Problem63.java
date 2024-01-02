@@ -31,6 +31,11 @@ public class Problem63 extends ConsoleProgram {
 		while(true){
 			String friend = readLine("Enter your friend: ");
 			if(friend.equals("")) break;
+			if(friendsList.get(name).contains(friend)){
+				println(friend + " is already saved in your current friends list.");
+				friend = readLine("Enter your friend: ");
+				if(friend.equals("")) break;
+			}
 			friendsList.get(name).add(friend);
 		}
 		
