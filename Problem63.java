@@ -26,6 +26,19 @@ public class Problem63 extends ConsoleProgram {
 		}
 		
 		printPeoplesNamesAndTheirFriends();
+		detectWhoHasMostFriends();
+	}
+
+	private void detectWhoHasMostFriends() {
+		String popularFriend = "";
+		int maxFriend = 0;
+		for(String name : friendsList.keySet()){
+			if(friendsList.get(name).size() > maxFriend){
+				maxFriend = friendsList.get(name).size();
+				popularFriend = name;
+			}
+		}
+		println(popularFriend + "'s the most popular guy. They have " + maxFriend + " friends");
 	}
 
 	private void typingFriends(String name) {
