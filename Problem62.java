@@ -27,7 +27,7 @@ public class Problem62 extends ConsoleProgram{
 
 	private void printNamesList() {
 		for(String str : namesList.keySet()){
-			println(str + " number of times typed in: " + namesList.get(str));
+			println(str + ". Name has been typed " + namesList.get(str) + " times.");
 		}
 		
 	}
