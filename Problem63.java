@@ -14,17 +14,18 @@ public class Problem63 extends ConsoleProgram {
 	private Map<String, ArrayList<String>> friendsList = new HashMap<String, ArrayList<String>>();
 
 	public void run() {
-		while(true){
+		while (true) {
 			String name = readLine("Enter your name: ");
-			if(friendsList.containsKey(name)){
+			if (friendsList.containsKey(name)) {
 				println(name + "'s friend list is already saved. Please type in another person.");
 				name = readLine("Enter your name: ");
 			}
-			if(name.equals("")) break;
+			if (name.equals(""))
+				break;
 			friendsList.put(name, new ArrayList<String>());
 			typingFriends(name);
 		}
-		
+
 		printPeoplesNamesAndTheirFriends();
 		detectWhoHasMostFriends();
 	}
@@ -32,45 +33,47 @@ public class Problem63 extends ConsoleProgram {
 	private void detectWhoHasMostFriends() {
 		String popularFriend = "";
 		int maxFriend = 0;
-		for(String name : friendsList.keySet()){
-			if(friendsList.get(name).size() > maxFriend){
+		for (String name : friendsList.keySet()) {
+			if (friendsList.get(name).size() > maxFriend) {
 				maxFriend = friendsList.get(name).size();
 				popularFriend = name;
 			}
 		}
-		println(popularFriend + "'s the most popular guy. They have " + maxFriend + " friends");
+		println(popularFriend + "'s the most popular guy." + popularFriend + " have " + maxFriend + " friends.");
 	}
 
 	private void typingFriends(String name) {
-		while(true){
+		while (true) {
 			String friend = readLine("Enter your friend: ");
-			if(friend.equals("")) break;
-			if(friendsList.get(name).contains(friend)){
+			if (friend.equals(""))
+				break;
+			if (friendsList.get(name).contains(friend)) {
 				println(friend + " is already saved in your current friends list.");
 				friend = readLine("Enter your friend: ");
-				if(friend.equals("")) break;
+				if (friend.equals(""))
+					break;
 			}
 			friendsList.get(name).add(friend);
 		}
-		
+
 	}
 
 	private void printPeoplesNamesAndTheirFriends() {
-		for(String person : friendsList.keySet()){
+		for (String person : friendsList.keySet()) {
 			print(person + "'s friends are: ");
 			printFriends(person);
 		}
-		
+
 	}
 
 	private void printFriends(String person) {
-		for(int i = 0; i < friendsList.get(person).size(); i++){
-			if(i < friendsList.get(person).size() - 1){
+		for (int i = 0; i < friendsList.get(person).size(); i++) {
+			if (i < friendsList.get(person).size() - 1) {
 				print(friendsList.get(person).get(i) + ", ");
-			}else{
+			} else {
 				print(friendsList.get(person).get(i) + ". ");
 			}
 		}
-		
+
 	}
 }
