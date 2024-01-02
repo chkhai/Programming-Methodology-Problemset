@@ -55,7 +55,7 @@ public class Problem63 extends ConsoleProgram {
 			if(i < friendsList.get(person).size() - 1){
 				print(friendsList.get(person).get(i) + ", ");
 			}else{
-				print(friendsList.get(person).get(i) + ".");
+				print(friendsList.get(person).get(i) + ". ");
 			}
 		}
 		
