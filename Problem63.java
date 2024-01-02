@@ -21,6 +21,7 @@ public class Problem63 extends ConsoleProgram {
 				name = readLine("Enter your name: ");
 			}
 			if(name.equals("")) break;
+			friendsList.put(name, null);
 			typingFriends(name);
 		}
 		
