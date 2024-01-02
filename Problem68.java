@@ -24,8 +24,6 @@ public class Problem68 extends GraphicsProgram{
 		addActionListeners();
 	}
 	
-	
-	
 	public void run() {
 		
 	}
