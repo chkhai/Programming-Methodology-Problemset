@@ -17,19 +17,23 @@ public class Problem63 extends ConsoleProgram {
 		while(true){
 			String name = readLine("Enter your name: ");
 			if(friendsList.containsKey(name)){
-				System.out.println("acs");
 				println(name + "'s friend list is already saved. Please type in another person.");
 				name = readLine("Enter your name: ");
 			}
 			if(name.equals("")) break;
-			while(true){
-				String friend = readLine("Enter your friend: ");
-				if(friend.equals("")) break;
-				friendsList.get(name).add(friend);
-			}
+			typingFriends(name);
 		}
 		
 		printPeoplesNamesAndTheirFriends();
+	}
+
+	private void typingFriends(String name) {
+		while(true){
+			String friend = readLine("Enter your friend: ");
+			if(friend.equals("")) break;
+			friendsList.get(name).add(friend);
+		}
+		
 	}
 
 	private void printPeoplesNamesAndTheirFriends() {
