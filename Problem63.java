@@ -9,6 +9,7 @@ import acm.program.ConsoleProgram;
 //მეგობრობა შეიძლება იყოს ცალმხრივი. თუკი შევიყვანთ A-ს და B-ს, ეს ნიშნავს, რომ A არის
 //B-ს მეგობარი, მაგრამ B შეიძლება არ იყოს A-ს მეგობარი.
 
+//problem 64 and problem 65 solution is in this class.
 public class Problem63 extends ConsoleProgram {
 
 	private Map<String, ArrayList<String>> friendsList = new HashMap<String, ArrayList<String>>();
